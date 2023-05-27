@@ -1,0 +1,12 @@
+<map id="Dcel::get_Vertices" name="Dcel::get_Vertices">
+<area shape="rect" id="node1" title="get vertices" alt="" coords="720,144,849,169"/>
+<area shape="rect" id="node2" href="$class_dcel.html#a0e9ba6636fedd9b5f3074f8a61a21f01" title="add edge and partition" alt="" coords="507,5,672,31"/>
+<area shape="rect" id="node6" href="$class_dcel.html#a9a1acb48a938e641998708e56c6fc302" title="compare dcel with &#39;this&#39; class" alt="" coords="521,55,658,80"/>
+<area shape="rect" id="node7" href="$class_auxiliary_class.html#ae7548083b772fb943ba626cc0fddbb75" title="checks whether inside Cyclical List" alt="" coords="516,105,663,145"/>
+<area shape="rect" id="node8" href="$class_auxiliary_class.html#a650238ba84be71e7b570b7c6971315ea" title="obtain notches in cyclical_list" alt="" coords="515,169,663,209"/>
+<area shape="rect" id="node9" href="$class_auxiliary_class.html#ac2089c19eb2805e0d9e218b33ed70e86" title="obtain set of vertices of a cyclical list, on the right side of an edge as seen in the direction of t..." alt="" coords="511,233,668,273"/>
+<area shape="rect" id="node10" href="$class_dcel.html#ab4469f81be4d96142689eb2d03281b34" title="replace a cyclical list with other" alt="" coords="540,297,639,323"/>
+<area shape="rect" id="node3" href="$class_algorithm1.html#a61f3c177d4792f9fb4f2bca1cced4a09" title=" " alt="" coords="307,112,459,137"/>
+<area shape="rect" id="node4" href="$class_vertex_decomposition.html#ae304fbb1dbb7fbc1469a336da0c8910e" title=" " alt="" coords="104,105,259,145"/>
+<area shape="rect" id="node5" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,112,56,137"/>
+</map>

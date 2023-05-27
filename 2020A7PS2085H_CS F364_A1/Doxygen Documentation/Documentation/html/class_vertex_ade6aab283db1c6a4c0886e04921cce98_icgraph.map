@@ -1,0 +1,14 @@
+<map id="Vertex::get_coordinates" name="Vertex::get_coordinates">
+<area shape="rect" id="node1" title=" " alt="" coords="907,203,1067,229"/>
+<area shape="rect" id="node2" href="$class_dcel.html#a0e9ba6636fedd9b5f3074f8a61a21f01" title="add edge and partition" alt="" coords="507,254,672,279"/>
+<area shape="rect" id="node3" href="$class_algorithm1.html#a61f3c177d4792f9fb4f2bca1cced4a09" title=" " alt="" coords="307,146,459,171"/>
+<area shape="rect" id="node6" href="$class_auxiliary_class.html#a9871648fc6f4a5a7511f6be95f25ffd2" title="denotes angle between 0 and 360 swept by counterclockwise rotation from line segment ba to bc" alt="" coords="724,113,855,153"/>
+<area shape="rect" id="node8" href="$class_auxiliary_class.html#a650238ba84be71e7b570b7c6971315ea" title="obtain notches in cyclical_list" alt="" coords="515,189,663,229"/>
+<area shape="rect" id="node9" href="$class_dcel.html#a2b2c4df68cfc3ec53ab8b9f48c86fc08" title="Get next element." alt="" coords="522,38,657,63"/>
+<area shape="rect" id="node10" href="$class_dcel.html#a7554bfecc1fdb49d71e0f77154c71987" title="Get next element." alt="" coords="723,381,855,406"/>
+<area shape="rect" id="node11" href="$class_auxiliary_class.html#ac2089c19eb2805e0d9e218b33ed70e86" title="obtain set of vertices of a cyclical list, on the right side of an edge as seen in the direction of t..." alt="" coords="511,304,668,344"/>
+<area shape="rect" id="node12" href="$class_dcel.html#acf3bbca734c0a4d24429fd008a910f52" title="removes the vertex, from the list, rest stays connected" alt="" coords="720,279,859,305"/>
+<area shape="rect" id="node4" href="$class_vertex_decomposition.html#ae304fbb1dbb7fbc1469a336da0c8910e" title=" " alt="" coords="104,139,259,179"/>
+<area shape="rect" id="node5" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,118,56,143"/>
+<area shape="rect" id="node7" href="$class_merging.html#a0b3683098e1b5d526ea4b94df8a81131" title="The partitioning algorithms discussed earlier generate effective partitions, but as with other partit..." alt="" coords="321,89,444,114"/>
+</map>

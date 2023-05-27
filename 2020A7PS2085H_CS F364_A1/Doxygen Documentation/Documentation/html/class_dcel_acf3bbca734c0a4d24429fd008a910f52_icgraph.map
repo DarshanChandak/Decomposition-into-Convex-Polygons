@@ -1,0 +1,8 @@
+<map id="Dcel::remove_vertex" name="Dcel::remove_vertex">
+<area shape="rect" id="node1" title="removes the vertex, from the list, rest stays connected" alt="" coords="720,35,859,60"/>
+<area shape="rect" id="node2" href="$class_dcel.html#a0e9ba6636fedd9b5f3074f8a61a21f01" title="add edge and partition" alt="" coords="507,5,672,31"/>
+<area shape="rect" id="node6" href="$class_auxiliary_class.html#ac2089c19eb2805e0d9e218b33ed70e86" title="obtain set of vertices of a cyclical list, on the right side of an edge as seen in the direction of t..." alt="" coords="511,55,668,95"/>
+<area shape="rect" id="node3" href="$class_algorithm1.html#a61f3c177d4792f9fb4f2bca1cced4a09" title=" " alt="" coords="307,35,459,60"/>
+<area shape="rect" id="node4" href="$class_vertex_decomposition.html#ae304fbb1dbb7fbc1469a336da0c8910e" title=" " alt="" coords="104,27,259,67"/>
+<area shape="rect" id="node5" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,35,56,60"/>
+</map>

@@ -1,0 +1,198 @@
+\hypertarget{class_auxiliary_class}{}\doxysection{Auxiliary\+Class Class Reference}
+\label{class_auxiliary_class}\index{AuxiliaryClass@{AuxiliaryClass}}
+
+
+{\ttfamily \#include $<$auxiliary\+\_\+class.\+h$>$}
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static double \mbox{\hyperlink{class_auxiliary_class_a9871648fc6f4a5a7511f6be95f25ffd2}{get\+\_\+angle}} (\mbox{\hyperlink{class_vertex}{Vertex}} $\ast$a, \mbox{\hyperlink{class_vertex}{Vertex}} $\ast$b, \mbox{\hyperlink{class_vertex}{Vertex}} $\ast$c)
+\begin{DoxyCompactList}\small\item\em denotes angle between 0 and 360 swept by counterclockwise rotation from line segment ba to bc \end{DoxyCompactList}\item 
+static vector$<$ pair$<$ double, double $>$ $>$ \mbox{\hyperlink{class_auxiliary_class_a650238ba84be71e7b570b7c6971315ea}{obtain\+\_\+notches}} (\mbox{\hyperlink{class_dcel}{Dcel}} $\ast$dcel1, \mbox{\hyperlink{class_dcel}{Dcel}} $\ast$dcel2)
+\begin{DoxyCompactList}\small\item\em obtain notches in cyclical\+\_\+list \end{DoxyCompactList}\item 
+static vector$<$ pair$<$ double, double $>$ $>$ \mbox{\hyperlink{class_auxiliary_class_afd4b39893095c4f924cc6f843a476990}{get\+\_\+smallest\+\_\+rectangle}} (\mbox{\hyperlink{class_dcel}{Dcel}} $\ast$dcel)
+\begin{DoxyCompactList}\small\item\em obtain rectangle covering the cyclical\+\_\+list \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_auxiliary_class_a644d5579f9b86d83d0855a896aa967ab}{inside\+\_\+rectangle}} (vector$<$ pair$<$ double, double $>$ $>$ rectangle, pair$<$ double, double $>$ vertex)
+\begin{DoxyCompactList}\small\item\em checks whether inside rectangle \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_auxiliary_class_ae7548083b772fb943ba626cc0fddbb75}{inside\+\_\+cyclical\+\_\+list}} (\mbox{\hyperlink{class_dcel}{Dcel}} $\ast$dcel, pair$<$ double, double $>$ vertex)
+\begin{DoxyCompactList}\small\item\em checks whether inside Cyclical List \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_auxiliary_class_ac2089c19eb2805e0d9e218b33ed70e86}{removal\+\_\+edges}} (\mbox{\hyperlink{class_dcel}{Dcel}} $\ast$dcel, \mbox{\hyperlink{class_vertex}{Vertex}} $\ast$starting\+\_\+vertex, pair$<$ double, double $>$ inside\+\_\+vertex)
+\begin{DoxyCompactList}\small\item\em obtain set of vertices of a cyclical list, on the right side of an edge as seen in the direction of the edge \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{auxiliary__class_8h_source_l00009}{9}} of file \mbox{\hyperlink{auxiliary__class_8h_source}{auxiliary\+\_\+class.\+h}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_auxiliary_class_a9871648fc6f4a5a7511f6be95f25ffd2}\label{class_auxiliary_class_a9871648fc6f4a5a7511f6be95f25ffd2}} 
+\index{AuxiliaryClass@{AuxiliaryClass}!get\_angle@{get\_angle}}
+\index{get\_angle@{get\_angle}!AuxiliaryClass@{AuxiliaryClass}}
+\doxysubsubsection{\texorpdfstring{get\_angle()}{get\_angle()}}
+{\footnotesize\ttfamily double Auxiliary\+Class\+::get\+\_\+angle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vertex}{Vertex}} $\ast$}]{a,  }\item[{\mbox{\hyperlink{class_vertex}{Vertex}} $\ast$}]{b,  }\item[{\mbox{\hyperlink{class_vertex}{Vertex}} $\ast$}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+denotes angle between 0 and 360 swept by counterclockwise rotation from line segment ba to bc 
+
+
+
+Definition at line \mbox{\hyperlink{auxiliary__class_8h_source_l00047}{47}} of file \mbox{\hyperlink{auxiliary__class_8h_source}{auxiliary\+\_\+class.\+h}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{class_auxiliary_class_a9871648fc6f4a5a7511f6be95f25ffd2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_auxiliary_class_a9871648fc6f4a5a7511f6be95f25ffd2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_auxiliary_class_afd4b39893095c4f924cc6f843a476990}\label{class_auxiliary_class_afd4b39893095c4f924cc6f843a476990}} 
+\index{AuxiliaryClass@{AuxiliaryClass}!get\_smallest\_rectangle@{get\_smallest\_rectangle}}
+\index{get\_smallest\_rectangle@{get\_smallest\_rectangle}!AuxiliaryClass@{AuxiliaryClass}}
+\doxysubsubsection{\texorpdfstring{get\_smallest\_rectangle()}{get\_smallest\_rectangle()}}
+{\footnotesize\ttfamily vector$<$ pair$<$ double, double $>$ $>$ Auxiliary\+Class\+::get\+\_\+smallest\+\_\+rectangle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_dcel}{Dcel}} $\ast$}]{dcel }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+obtain rectangle covering the cyclical\+\_\+list 
+
+
+
+Definition at line \mbox{\hyperlink{auxiliary__class_8h_source_l00107}{107}} of file \mbox{\hyperlink{auxiliary__class_8h_source}{auxiliary\+\_\+class.\+h}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=299pt]{class_auxiliary_class_afd4b39893095c4f924cc6f843a476990_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_auxiliary_class_afd4b39893095c4f924cc6f843a476990_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_auxiliary_class_ae7548083b772fb943ba626cc0fddbb75}\label{class_auxiliary_class_ae7548083b772fb943ba626cc0fddbb75}} 
+\index{AuxiliaryClass@{AuxiliaryClass}!inside\_cyclical\_list@{inside\_cyclical\_list}}
+\index{inside\_cyclical\_list@{inside\_cyclical\_list}!AuxiliaryClass@{AuxiliaryClass}}
+\doxysubsubsection{\texorpdfstring{inside\_cyclical\_list()}{inside\_cyclical\_list()}}
+{\footnotesize\ttfamily bool Auxiliary\+Class\+::inside\+\_\+cyclical\+\_\+list (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_dcel}{Dcel}} $\ast$}]{dcel,  }\item[{pair$<$ double, double $>$}]{vertex }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+checks whether inside Cyclical List 
+
+
+
+Definition at line \mbox{\hyperlink{auxiliary__class_8h_source_l00156}{156}} of file \mbox{\hyperlink{auxiliary__class_8h_source}{auxiliary\+\_\+class.\+h}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{class_auxiliary_class_ae7548083b772fb943ba626cc0fddbb75_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_auxiliary_class_ae7548083b772fb943ba626cc0fddbb75_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_auxiliary_class_a644d5579f9b86d83d0855a896aa967ab}\label{class_auxiliary_class_a644d5579f9b86d83d0855a896aa967ab}} 
+\index{AuxiliaryClass@{AuxiliaryClass}!inside\_rectangle@{inside\_rectangle}}
+\index{inside\_rectangle@{inside\_rectangle}!AuxiliaryClass@{AuxiliaryClass}}
+\doxysubsubsection{\texorpdfstring{inside\_rectangle()}{inside\_rectangle()}}
+{\footnotesize\ttfamily bool Auxiliary\+Class\+::inside\+\_\+rectangle (\begin{DoxyParamCaption}\item[{vector$<$ pair$<$ double, double $>$ $>$}]{rectangle,  }\item[{pair$<$ double, double $>$}]{vertex }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+checks whether inside rectangle 
+
+
+
+Definition at line \mbox{\hyperlink{auxiliary__class_8h_source_l00128}{128}} of file \mbox{\hyperlink{auxiliary__class_8h_source}{auxiliary\+\_\+class.\+h}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_auxiliary_class_a644d5579f9b86d83d0855a896aa967ab_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_auxiliary_class_a650238ba84be71e7b570b7c6971315ea}\label{class_auxiliary_class_a650238ba84be71e7b570b7c6971315ea}} 
+\index{AuxiliaryClass@{AuxiliaryClass}!obtain\_notches@{obtain\_notches}}
+\index{obtain\_notches@{obtain\_notches}!AuxiliaryClass@{AuxiliaryClass}}
+\doxysubsubsection{\texorpdfstring{obtain\_notches()}{obtain\_notches()}}
+{\footnotesize\ttfamily vector$<$ pair$<$ double, double $>$ $>$ Auxiliary\+Class\+::obtain\+\_\+notches (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_dcel}{Dcel}} $\ast$}]{dcel1,  }\item[{\mbox{\hyperlink{class_dcel}{Dcel}} $\ast$}]{dcel2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+obtain notches in cyclical\+\_\+list 
+
+
+
+Definition at line \mbox{\hyperlink{auxiliary__class_8h_source_l00058}{58}} of file \mbox{\hyperlink{auxiliary__class_8h_source}{auxiliary\+\_\+class.\+h}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_auxiliary_class_a650238ba84be71e7b570b7c6971315ea_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_auxiliary_class_a650238ba84be71e7b570b7c6971315ea_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_auxiliary_class_ac2089c19eb2805e0d9e218b33ed70e86}\label{class_auxiliary_class_ac2089c19eb2805e0d9e218b33ed70e86}} 
+\index{AuxiliaryClass@{AuxiliaryClass}!removal\_edges@{removal\_edges}}
+\index{removal\_edges@{removal\_edges}!AuxiliaryClass@{AuxiliaryClass}}
+\doxysubsubsection{\texorpdfstring{removal\_edges()}{removal\_edges()}}
+{\footnotesize\ttfamily bool Auxiliary\+Class\+::removal\+\_\+edges (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_dcel}{Dcel}} $\ast$}]{dcel,  }\item[{\mbox{\hyperlink{class_vertex}{Vertex}} $\ast$}]{starting\+\_\+vertex,  }\item[{pair$<$ double, double $>$}]{inside\+\_\+vertex }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+obtain set of vertices of a cyclical list, on the right side of an edge as seen in the direction of the edge 
+
+
+
+Definition at line \mbox{\hyperlink{auxiliary__class_8h_source_l00177}{177}} of file \mbox{\hyperlink{auxiliary__class_8h_source}{auxiliary\+\_\+class.\+h}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_auxiliary_class_ac2089c19eb2805e0d9e218b33ed70e86_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_auxiliary_class_ac2089c19eb2805e0d9e218b33ed70e86_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Code/\mbox{\hyperlink{auxiliary__class_8h}{auxiliary\+\_\+class.\+h}}\end{DoxyCompactItemize}

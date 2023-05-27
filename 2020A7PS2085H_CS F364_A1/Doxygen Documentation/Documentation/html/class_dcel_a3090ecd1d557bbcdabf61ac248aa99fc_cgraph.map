@@ -1,0 +1,6 @@
+<map id="Dcel::append" name="Dcel::append">
+<area shape="rect" id="node1" title="append element in the list" alt="" coords="5,55,104,80"/>
+<area shape="rect" id="node2" href="$class_vertex.html#af0c421646f594265ae30c3c60883f156" title="set incident edge" alt="" coords="152,5,320,31"/>
+<area shape="rect" id="node3" href="$class_edge.html#af995e3e0a0b28aafe2c59a1dd403bc3d" title="set left face" alt="" coords="171,55,301,80"/>
+<area shape="rect" id="node4" href="$class_edge.html#abfc19ebef269392c04c7fe39b194c9f8" title="set next edge" alt="" coords="166,104,306,129"/>
+</map>

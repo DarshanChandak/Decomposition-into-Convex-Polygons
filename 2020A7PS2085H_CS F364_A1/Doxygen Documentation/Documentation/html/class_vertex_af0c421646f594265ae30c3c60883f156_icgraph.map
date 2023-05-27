@@ -1,0 +1,11 @@
+<map id="Vertex::set_incidentEdge" name="Vertex::set_incidentEdge">
+<area shape="rect" id="node1" title="set incident edge" alt="" coords="907,79,1075,104"/>
+<area shape="rect" id="node2" href="$class_dcel.html#a3090ecd1d557bbcdabf61ac248aa99fc" title="append element in the list" alt="" coords="740,26,839,51"/>
+<area shape="rect" id="node7" href="$class_dcel.html#a13505e498139df0c6c93fc9d996ac3b9" title="Populating Dcel." alt="" coords="528,140,651,166"/>
+<area shape="rect" id="node8" href="$class_dcel.html#acf3bbca734c0a4d24429fd008a910f52" title="removes the vertex, from the list, rest stays connected" alt="" coords="720,79,859,104"/>
+<area shape="rect" id="node3" href="$class_dcel.html#a0e9ba6636fedd9b5f3074f8a61a21f01" title="add edge and partition" alt="" coords="507,26,672,51"/>
+<area shape="rect" id="node4" href="$class_algorithm1.html#a61f3c177d4792f9fb4f2bca1cced4a09" title=" " alt="" coords="307,55,459,80"/>
+<area shape="rect" id="node5" href="$class_vertex_decomposition.html#ae304fbb1dbb7fbc1469a336da0c8910e" title=" " alt="" coords="104,48,259,88"/>
+<area shape="rect" id="node6" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,55,56,80"/>
+<area shape="rect" id="node9" href="$class_auxiliary_class.html#ac2089c19eb2805e0d9e218b33ed70e86" title="obtain set of vertices of a cyclical list, on the right side of an edge as seen in the direction of t..." alt="" coords="511,76,668,116"/>
+</map>

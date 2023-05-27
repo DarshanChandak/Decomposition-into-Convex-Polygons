@@ -1,0 +1,63 @@
+\hypertarget{class_merging}{}\doxysection{Merging Class Reference}
+\label{class_merging}\index{Merging@{Merging}}
+
+
+\mbox{\hyperlink{class_merging}{Merging}} Process.  
+
+
+
+
+{\ttfamily \#include $<$merging.\+h$>$}
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_merging_a0b3683098e1b5d526ea4b94df8a81131}{merging}} (vector$<$ \mbox{\hyperlink{class_dcel}{Dcel}} $\ast$ $>$ dcels, vector$<$ pair$<$ double, double $>$ $>$ vecx)
+\begin{DoxyCompactList}\small\item\em The partitioning algorithms discussed earlier generate effective partitions, but as with other partitioning algorithms, these partitions may occasionally include unnecessary diagonals. This means that two convex polygons sharing a diagonal may be combined to create a single polygon. To address this issue, we have created a merging procedure that can be employed following any partitioning process that results in unnecessary diagonals. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_merging}{Merging}} Process. 
+
+Definition at line \mbox{\hyperlink{merging_8h_source_l00006}{6}} of file \mbox{\hyperlink{merging_8h_source}{merging.\+h}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_merging_a0b3683098e1b5d526ea4b94df8a81131}\label{class_merging_a0b3683098e1b5d526ea4b94df8a81131}} 
+\index{Merging@{Merging}!merging@{merging}}
+\index{merging@{merging}!Merging@{Merging}}
+\doxysubsubsection{\texorpdfstring{merging()}{merging()}}
+{\footnotesize\ttfamily void Merging\+::merging (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_dcel}{Dcel}} $\ast$ $>$}]{dcels,  }\item[{vector$<$ pair$<$ double, double $>$ $>$}]{vecx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The partitioning algorithms discussed earlier generate effective partitions, but as with other partitioning algorithms, these partitions may occasionally include unnecessary diagonals. This means that two convex polygons sharing a diagonal may be combined to create a single polygon. To address this issue, we have created a merging procedure that can be employed following any partitioning process that results in unnecessary diagonals. 
+
+NP \texorpdfstring{$<$}{<}-\/ m + 1.
+
+LDP\mbox{[}i\mbox{]} \texorpdfstring{$<$}{<}-\/ true, LUP\mbox{[}i\mbox{]} \texorpdfstring{$<$}{<}-\/ i; i = 1; . . . ; NP. For j = 1 to m do (v(s), v(t)) \texorpdfstring{$<$}{<}-\/ LLE\mbox{[}j\mbox{]} If ($\vert$\+LPv(s)$\vert$\texorpdfstring{$>$}{>}2 and $\vert$\+LPv(t)$\vert$\texorpdfstring{$>$}{>}2) or ($\vert$\+LPv(s)$\vert$\texorpdfstring{$>$}{>}2 and v(t) is convex) or ($\vert$\+LPv(t)$\vert$\texorpdfstring{$>$}{>}2 and v(s) is convex) or (v(s) is convex and v(t) is convex) then j2 \texorpdfstring{$<$}{<}-\/ v(t), i(2) \texorpdfstring{$<$}{<}-\/ v(s), j(3) \texorpdfstring{$<$}{<}-\/ Next\mbox{[}P(j); v(t)\mbox{]}, i(1) \texorpdfstring{$<$}{<}-\/ Previous\mbox{[}P(j), v(s)\mbox{]} Find in LPv(t) the only pair (u, v(s)) containing v(s) j(1) \texorpdfstring{$<$}{<}-\/ Previous\mbox{[}P(u), v(t)\mbox{]}; i(3) \texorpdfstring{$<$}{<}-\/ Next\mbox{[}P(u), v(s)\mbox{]} If ang\{(i(1), i(2), i(3), (j(1), j(2), j(3)\} \texorpdfstring{$<$}{<}= 180 degree then NP \texorpdfstring{$<$}{<}-\/ NP + 1 Write as NPth polygon the polygon obtained merging the polygons with indices LUP\mbox{[}j\mbox{]} and LUP\mbox{[}u\mbox{]} LDP\mbox{[}j\mbox{]}\texorpdfstring{$<$}{<}-\/ false; LDP\mbox{[}u\mbox{]} \texorpdfstring{$<$}{<}-\/ false;LDP\mbox{[}NP\mbox{]} \texorpdfstring{$<$}{<}-\/ true LUP\mbox{[}j\mbox{]} \texorpdfstring{$<$}{<}-\/ NP; LUP\mbox{[}u\mbox{]} \texorpdfstring{$<$}{<}-\/ NP For h = 1 to NP-\/1 do If LUP\mbox{[}h\mbox{]} = j or LUP\mbox{[}h\mbox{]} = u then LUP\mbox{[}h\mbox{]} \texorpdfstring{$<$}{<}-\/ NP. 
+
+Definition at line \mbox{\hyperlink{merging_8h_source_l00040}{40}} of file \mbox{\hyperlink{merging_8h_source}{merging.\+h}}.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_merging_a0b3683098e1b5d526ea4b94df8a81131_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{class_merging_a0b3683098e1b5d526ea4b94df8a81131_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Code/\mbox{\hyperlink{merging_8h}{merging.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,10 @@
+<map id="Dcel::add_edge_partition" name="Dcel::add_edge_partition">
+<area shape="rect" id="node1" title="add edge and partition" alt="" coords="5,129,171,155"/>
+<area shape="rect" id="node2" href="$class_dcel.html#a3090ecd1d557bbcdabf61ac248aa99fc" title="append element in the list" alt="" coords="239,55,337,80"/>
+<area shape="rect" id="node6" href="$class_vertex.html#ade6aab283db1c6a4c0886e04921cce98" title=" " alt="" coords="409,153,569,179"/>
+<area shape="rect" id="node7" href="$class_dcel.html#a3ee0c9f548746099e533bfc0ea35a541" title="get vertices" alt="" coords="223,205,353,231"/>
+<area shape="rect" id="node8" href="$class_dcel.html#acf3bbca734c0a4d24429fd008a910f52" title="removes the vertex, from the list, rest stays connected" alt="" coords="219,104,357,129"/>
+<area shape="rect" id="node3" href="$class_vertex.html#af0c421646f594265ae30c3c60883f156" title="set incident edge" alt="" coords="405,55,573,80"/>
+<area shape="rect" id="node4" href="$class_edge.html#af995e3e0a0b28aafe2c59a1dd403bc3d" title="set left face" alt="" coords="424,5,555,31"/>
+<area shape="rect" id="node5" href="$class_edge.html#abfc19ebef269392c04c7fe39b194c9f8" title="set next edge" alt="" coords="419,104,559,129"/>
+</map>

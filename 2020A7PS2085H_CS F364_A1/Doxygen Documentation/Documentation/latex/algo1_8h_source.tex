@@ -1,0 +1,115 @@
+\hypertarget{algo1_8h_source}{}\doxysection{algo1.\+h}
+\label{algo1_8h_source}\index{Code/algo1.h@{Code/algo1.h}}
+\mbox{\hyperlink{algo1_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00001}00001\ \textcolor{preprocessor}{\#include\ <bits/stdc++.h>}}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00002}00002\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00004}\mbox{\hyperlink{class_algorithm1}{00004}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_algorithm1}{Algorithm1}}}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00005}00005\ \{}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00006}00006\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00007}00007\ \ \ \ \ \textcolor{keyword}{static}\ vector<Dcel\ *>\ \mbox{\hyperlink{class_algorithm1_a61f3c177d4792f9fb4f2bca1cced4a09}{algorithm1}}(vector<pair<double,\ double>>\ vecx,\ \textcolor{keywordtype}{bool}\ is\_first\_polygon);}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00008}00008\ \};}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00009}00009\ }
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00010}\mbox{\hyperlink{class_algorithm1_a61f3c177d4792f9fb4f2bca1cced4a09}{00010}}\ vector<Dcel\ *>\ \mbox{\hyperlink{class_algorithm1_a61f3c177d4792f9fb4f2bca1cced4a09}{Algorithm1::algorithm1}}(vector<pair<double,\ double>>\ vecx,\ \textcolor{keywordtype}{bool}\ is\_first\_polygon\ =\ \textcolor{keyword}{false})}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00011}00011\ \{}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00012}00012\ }
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00013}00013\ \ \ \ \ vector<Dcel\ *>\ final\_ans;}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00015}00015\ \ \ \ \ \mbox{\hyperlink{class_dcel}{Dcel}}\ *P\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_dcel}{Dcel}}();}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00016}00016\ \ \ \ \ P-\/>\mbox{\hyperlink{class_dcel_a13505e498139df0c6c93fc9d996ac3b9}{create\_dcel}}(vecx);}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00017}00017\ }
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00019}00019\ }
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00020}00020\ \ \ \ \ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ m\ =\ 1;}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00022}00022\ \ \ \ \ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ n\ =\ P-\/>\mbox{\hyperlink{class_dcel_a66aac0aa1bc61e975b49cf3dc7e5d354}{get\_size}}();}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00023}00023\ \ \ \ \ \textcolor{keywordflow}{while}\ (n\ >=\ 3)}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00024}00024\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00027}00027\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_dcel}{Dcel}}\ *L\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_dcel}{Dcel}}();}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00028}00028\ }
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00029}00029\ \ \ \ \ \ \ \ \ vector<pair<double,\ double>>\ temp;}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00030}00030\ \ \ \ \ \ \ \ \ temp.push\_back(P-\/>\mbox{\hyperlink{class_dcel_a771cfde96ae0d51202b26d6c853e5ab8}{get}}(0)-\/>\mbox{\hyperlink{class_vertex_ade6aab283db1c6a4c0886e04921cce98}{get\_coordinates}}());}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00031}00031\ \ \ \ \ \ \ \ \ L-\/>\mbox{\hyperlink{class_dcel_a13505e498139df0c6c93fc9d996ac3b9}{create\_dcel}}(temp);}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00032}00032\ }
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00033}00033\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*v1\ <-\/\ Last[Lm-\/1]\ v2<-\/Next[P,v1]*/}}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00034}00034\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_vertex}{Vertex}}\ *v1\ =\ L-\/>\mbox{\hyperlink{class_dcel_a6a6ead8114a7c93393750ddd49c47b74}{get\_last}}();}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00035}00035\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_vertex}{Vertex}}\ *v2\ =\ P-\/>\mbox{\hyperlink{class_dcel_a2b2c4df68cfc3ec53ab8b9f48c86fc08}{next\_element}}(v1);}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00036}00036\ }
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00037}00037\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_vertex}{Vertex}}\ *v\_1\ =\ L-\/>\mbox{\hyperlink{class_dcel_a6a6ead8114a7c93393750ddd49c47b74}{get\_last}}();}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00038}00038\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_vertex}{Vertex}}\ *v\_2\ =\ P-\/>\mbox{\hyperlink{class_dcel_a2b2c4df68cfc3ec53ab8b9f48c86fc08}{next\_element}}(v\_1);}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00042}00042\ \ \ \ \ \ \ \ \ L-\/>\mbox{\hyperlink{class_dcel_a3090ecd1d557bbcdabf61ac248aa99fc}{append}}(v\_2);}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00043}00043\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ i\ =\ 2;}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00044}00044\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_vertex}{Vertex}}\ *v\_3\ =\ P-\/>\mbox{\hyperlink{class_dcel_a2b2c4df68cfc3ec53ab8b9f48c86fc08}{next\_element}}(v\_2);}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00045}00045\ }
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00046}00046\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (1)}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00047}00047\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00048}00048\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (L-\/>\mbox{\hyperlink{class_dcel_a66aac0aa1bc61e975b49cf3dc7e5d354}{get\_size}}()\ >=\ n\ ||\ \mbox{\hyperlink{class_auxiliary_class_a9871648fc6f4a5a7511f6be95f25ffd2}{AuxiliaryClass::get\_angle}}(v\_1,\ v\_2,\ v\_3)\ >\ 180\ ||\ \mbox{\hyperlink{class_auxiliary_class_a9871648fc6f4a5a7511f6be95f25ffd2}{AuxiliaryClass::get\_angle}}(v\_2,\ v\_3,\ v1)\ >\ 180\ ||\ \mbox{\hyperlink{class_auxiliary_class_a9871648fc6f4a5a7511f6be95f25ffd2}{AuxiliaryClass::get\_angle}}(v\_3,\ v1,\ v2)\ >\ 180)}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00049}00049\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00050}00050\ \ \ \ \ \ \ \ \ \ \ \ \ L-\/>\mbox{\hyperlink{class_dcel_a3090ecd1d557bbcdabf61ac248aa99fc}{append}}(v\_3);}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00051}00051\ }
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00052}00052\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_vertex}{Vertex}}\ *temp\_v\_1\ =\ P-\/>\mbox{\hyperlink{class_dcel_a2b2c4df68cfc3ec53ab8b9f48c86fc08}{next\_element}}(v\_1);}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00053}00053\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_vertex}{Vertex}}\ *temp\_v\_2\ =\ P-\/>\mbox{\hyperlink{class_dcel_a2b2c4df68cfc3ec53ab8b9f48c86fc08}{next\_element}}(v\_2);}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00054}00054\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_vertex}{Vertex}}\ *temp\_v\_3\ =\ P-\/>\mbox{\hyperlink{class_dcel_a2b2c4df68cfc3ec53ab8b9f48c86fc08}{next\_element}}(v\_3);}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00055}00055\ \ \ \ \ \ \ \ \ \ \ \ \ v\_1\ =\ temp\_v\_1;}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00056}00056\ \ \ \ \ \ \ \ \ \ \ \ \ v\_2\ =\ temp\_v\_2;}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00057}00057\ \ \ \ \ \ \ \ \ \ \ \ \ v\_3\ =\ temp\_v\_3;}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00058}00058\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00059}00059\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!L-\/>\mbox{\hyperlink{class_dcel_a9a1acb48a938e641998708e56c6fc302}{compare\_dcel}}(P))}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00060}00060\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00061}00061\ \ \ \ \ \ \ \ \ \ \ \ \ vector<pair<double,\ double>>\ notches\ =\ \mbox{\hyperlink{class_auxiliary_class_a650238ba84be71e7b570b7c6971315ea}{AuxiliaryClass::obtain\_notches}}(P,\ L);}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00062}00062\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (notches.size()\ >\ 0)}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00063}00063\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00064}00064\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ vector<pair<double,\ double>>\ rectangle\ =\ \mbox{\hyperlink{class_auxiliary_class_afd4b39893095c4f924cc6f843a476990}{AuxiliaryClass::get\_smallest\_rectangle}}(L);}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00065}00065\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ backward\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00066}00066\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ pair<double,\ double>\ v;}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00067}00067\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (!backward\ and\ notches.size()\ >\ 0)}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00068}00068\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00069}00069\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ v\ =\ notches[0];}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00070}00070\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{class_auxiliary_class_a644d5579f9b86d83d0855a896aa967ab}{AuxiliaryClass::inside\_rectangle}}(rectangle,\ v))}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00071}00071\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00072}00072\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ notches.erase(notches.begin());}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00073}00073\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00074}00074\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (L-\/>\mbox{\hyperlink{class_dcel_a66aac0aa1bc61e975b49cf3dc7e5d354}{get\_size}}()\ ==\ 2)}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00075}00075\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00076}00076\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ notches.erase(notches.begin());}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00077}00077\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00078}00078\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00079}00079\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00080}00080\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00081}00081\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (notches.size()\ >\ 0)}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00082}00082\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00083}00083\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_auxiliary_class_ae7548083b772fb943ba626cc0fddbb75}{AuxiliaryClass::inside\_cyclical\_list}}(L,\ v))}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00084}00084\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00085}00085\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_auxiliary_class_ac2089c19eb2805e0d9e218b33ed70e86}{AuxiliaryClass::removal\_edges}}(L,\ v1,\ v);}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00086}00086\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ notches.erase(notches.begin());}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00087}00087\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ backward\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00088}00088\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00089}00089\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00090}00090\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00091}00091\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ notches.erase(notches.begin());}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00092}00092\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00093}00093\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00094}00094\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00095}00095\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00096}00096\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (L-\/>\mbox{\hyperlink{class_dcel_a6a6ead8114a7c93393750ddd49c47b74}{get\_last}}()\ !=\ v2)}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00097}00097\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00098}00098\ }
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00099}00099\ \ \ \ \ \ \ \ \ \ \ \ \ final\_ans.push\_back(L);}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00100}00100\ }
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00101}00101\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (is\_first\_polygon)}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00102}00102\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00103}00103\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ final\_ans;}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00104}00104\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00105}00105\ }
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00106}00106\ \ \ \ \ \ \ \ \ \ \ \ \ P-\/>\mbox{\hyperlink{class_dcel_a0e9ba6636fedd9b5f3074f8a61a21f01}{add\_edge\_partition}}(L-\/>\mbox{\hyperlink{class_dcel_a6a6ead8114a7c93393750ddd49c47b74}{get\_last}}());}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00107}00107\ \ \ \ \ \ \ \ \ \ \ \ \ n\ =\ n\ +\ 2\ -\/\ L-\/>\mbox{\hyperlink{class_dcel_a66aac0aa1bc61e975b49cf3dc7e5d354}{get\_size}}();}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00108}00108\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00109}00109\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00110}00110\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00111}00111\ \ \ \ \ \ \ \ \ \ \ \ \ P-\/>\mbox{\hyperlink{class_dcel_a0e9ba6636fedd9b5f3074f8a61a21f01}{add\_edge\_partition}}(L-\/>\mbox{\hyperlink{class_dcel_a6a6ead8114a7c93393750ddd49c47b74}{get\_last}}());}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00112}00112\ \ \ \ \ \ \ \ \ \ \ \ \ n\ =\ n\ +\ 2\ -\/\ L-\/>\mbox{\hyperlink{class_dcel_a66aac0aa1bc61e975b49cf3dc7e5d354}{get\_size}}();}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00113}00113\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00114}00114\ \ \ \ \ \ \ \ \ m\ =\ m\ +\ 1;}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00115}00115\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00116}00116\ \ \ \ \ \textcolor{keywordflow}{return}\ final\_ans;}
+\DoxyCodeLine{\Hypertarget{algo1_8h_source_l00117}00117\ \}}
+
+\end{DoxyCode}

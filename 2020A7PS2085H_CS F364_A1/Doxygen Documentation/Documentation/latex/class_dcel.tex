@@ -1,0 +1,498 @@
+\hypertarget{class_dcel}{}\doxysection{Dcel Class Reference}
+\label{class_dcel}\index{Dcel@{Dcel}}
+
+
+{\ttfamily \#include $<$dcel.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_dcel}{Dcel}} $\ast$ \mbox{\hyperlink{class_dcel_a13505e498139df0c6c93fc9d996ac3b9}{create\+\_\+dcel}} (vector$<$ pair$<$ double, double $>$ $>$ initial\+\_\+vertices)
+\begin{DoxyCompactList}\small\item\em Populating \mbox{\hyperlink{class_dcel}{Dcel}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_vertex}{Vertex}} $\ast$ \mbox{\hyperlink{class_dcel_a6a6ead8114a7c93393750ddd49c47b74}{get\+\_\+last}} ()
+\begin{DoxyCompactList}\small\item\em Get last element. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_vertex}{Vertex}} $\ast$ \mbox{\hyperlink{class_dcel_a2b2c4df68cfc3ec53ab8b9f48c86fc08}{next\+\_\+element}} (\mbox{\hyperlink{class_vertex}{Vertex}} $\ast$vertex)
+\begin{DoxyCompactList}\small\item\em Get next element. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_vertex}{Vertex}} $\ast$ \mbox{\hyperlink{class_dcel_a7554bfecc1fdb49d71e0f77154c71987}{prev\+\_\+element}} (\mbox{\hyperlink{class_vertex}{Vertex}} $\ast$vertex)
+\begin{DoxyCompactList}\small\item\em Get next element. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_vertex}{Vertex}} $\ast$ \mbox{\hyperlink{class_dcel_a771cfde96ae0d51202b26d6c853e5ab8}{get}} (long long i)
+\begin{DoxyCompactList}\small\item\em get element specified at position i \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_vertex}{Vertex}} $\ast$ \mbox{\hyperlink{class_dcel_a3090ecd1d557bbcdabf61ac248aa99fc}{append}} (\mbox{\hyperlink{class_vertex}{Vertex}} $\ast$append\+\_\+vertex)
+\begin{DoxyCompactList}\small\item\em append element in the list \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_dcel_a9a1acb48a938e641998708e56c6fc302}{compare\+\_\+dcel}} (\mbox{\hyperlink{class_dcel}{Dcel}} $\ast$dcel)
+\begin{DoxyCompactList}\small\item\em compare dcel with \textquotesingle{}this\textquotesingle{} class \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_dcel_acf3bbca734c0a4d24429fd008a910f52}{remove\+\_\+vertex}} (\mbox{\hyperlink{class_vertex}{Vertex}} $\ast$vertex)
+\begin{DoxyCompactList}\small\item\em removes the vertex, from the list, rest stays connected \end{DoxyCompactList}\item 
+long long \mbox{\hyperlink{class_dcel_a66aac0aa1bc61e975b49cf3dc7e5d354}{get\+\_\+size}} ()
+\begin{DoxyCompactList}\small\item\em get size \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{class_vertex}{Vertex}} $\ast$ $>$ \mbox{\hyperlink{class_dcel_a2b14ef93b6589e7396f83965e02e5f05}{get\+\_\+elements}} ()
+\begin{DoxyCompactList}\small\item\em get elements \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_dcel_ab4469f81be4d96142689eb2d03281b34}{replace}} (\mbox{\hyperlink{class_dcel}{Dcel}} $\ast$dcel2)
+\begin{DoxyCompactList}\small\item\em replace a cyclical list with other \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_dcel_a0e9ba6636fedd9b5f3074f8a61a21f01}{add\+\_\+edge\+\_\+partition}} (\mbox{\hyperlink{class_vertex}{Vertex}} $\ast$vertex)
+\begin{DoxyCompactList}\small\item\em add edge and partition \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_dcel_a3659abea01869a10351d0f7d9971a7b6}{set\+\_\+\+Vertices}} (vector$<$ \mbox{\hyperlink{class_vertex}{Vertex}} $\ast$ $>$ \mbox{\hyperlink{class_dcel_aa423d8837fcb6a464d9878dfb331e3dc}{vertices}})
+\begin{DoxyCompactList}\small\item\em set vertices \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_dcel_a37cc2200f72fa6d95c78c4b3171b8c50}{set\+\_\+\+Edges}} (vector$<$ \mbox{\hyperlink{class_edge}{Edge}} $\ast$ $>$ \mbox{\hyperlink{class_dcel_a83d85dda82e7ee54437c869987e6a250}{edges}})
+\begin{DoxyCompactList}\small\item\em set vertices \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_dcel_ae94fee7b76977915e191d14f8d5f18c1}{set\+\_\+\+Faces}} (vector$<$ \mbox{\hyperlink{class_face}{Face}} $\ast$ $>$ \mbox{\hyperlink{class_dcel_acb5fadbf0d20628b68959419fa51a7df}{faces}})
+\begin{DoxyCompactList}\small\item\em set vertices \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{class_vertex}{Vertex}} $\ast$ $>$ \mbox{\hyperlink{class_dcel_a3ee0c9f548746099e533bfc0ea35a541}{get\+\_\+\+Vertices}} ()
+\begin{DoxyCompactList}\small\item\em get vertices \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{class_edge}{Edge}} $\ast$ $>$ \mbox{\hyperlink{class_dcel_a34c54d5d056b057f6c0cfef81d89296e}{get\+\_\+\+Edges}} ()
+\begin{DoxyCompactList}\small\item\em get vertices \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{class_face}{Face}} $\ast$ $>$ \mbox{\hyperlink{class_dcel_acde6cdba4879d503e254800d110f3e6d}{get\+\_\+\+Faces}} ()
+\begin{DoxyCompactList}\small\item\em get vertices \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ \mbox{\hyperlink{class_vertex}{Vertex}} $\ast$ $>$ \mbox{\hyperlink{class_dcel_aa423d8837fcb6a464d9878dfb331e3dc}{vertices}}
+\begin{DoxyCompactList}\small\item\em Collection of vertices, edges, faces. \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{class_edge}{Edge}} $\ast$ $>$ \mbox{\hyperlink{class_dcel_a83d85dda82e7ee54437c869987e6a250}{edges}}
+\item 
+vector$<$ \mbox{\hyperlink{class_face}{Face}} $\ast$ $>$ \mbox{\hyperlink{class_dcel_acb5fadbf0d20628b68959419fa51a7df}{faces}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{dcel_8h_source_l00017}{17}} of file \mbox{\hyperlink{dcel_8h_source}{dcel.\+h}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_dcel_a0e9ba6636fedd9b5f3074f8a61a21f01}\label{class_dcel_a0e9ba6636fedd9b5f3074f8a61a21f01}} 
+\index{Dcel@{Dcel}!add\_edge\_partition@{add\_edge\_partition}}
+\index{add\_edge\_partition@{add\_edge\_partition}!Dcel@{Dcel}}
+\doxysubsubsection{\texorpdfstring{add\_edge\_partition()}{add\_edge\_partition()}}
+{\footnotesize\ttfamily void Dcel\+::add\+\_\+edge\+\_\+partition (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vertex}{Vertex}} $\ast$}]{vertex }\end{DoxyParamCaption})}
+
+
+
+add edge and partition 
+
+this-\/\texorpdfstring{$>$}{>}remove\+\_\+vertex(vecy\mbox{[}0\mbox{]});
+
+Definition at line \mbox{\hyperlink{dcel_8h_source_l00458}{458}} of file \mbox{\hyperlink{dcel_8h_source}{dcel.\+h}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dcel_a0e9ba6636fedd9b5f3074f8a61a21f01_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dcel_a0e9ba6636fedd9b5f3074f8a61a21f01_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_dcel_a3090ecd1d557bbcdabf61ac248aa99fc}\label{class_dcel_a3090ecd1d557bbcdabf61ac248aa99fc}} 
+\index{Dcel@{Dcel}!append@{append}}
+\index{append@{append}!Dcel@{Dcel}}
+\doxysubsubsection{\texorpdfstring{append()}{append()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vertex}{Vertex}} $\ast$ Dcel\+::append (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vertex}{Vertex}} $\ast$}]{append\+\_\+vertex }\end{DoxyParamCaption})}
+
+
+
+append element in the list 
+
+
+
+Definition at line \mbox{\hyperlink{dcel_8h_source_l00403}{403}} of file \mbox{\hyperlink{dcel_8h_source}{dcel.\+h}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{class_dcel_a3090ecd1d557bbcdabf61ac248aa99fc_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dcel_a3090ecd1d557bbcdabf61ac248aa99fc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_dcel_a9a1acb48a938e641998708e56c6fc302}\label{class_dcel_a9a1acb48a938e641998708e56c6fc302}} 
+\index{Dcel@{Dcel}!compare\_dcel@{compare\_dcel}}
+\index{compare\_dcel@{compare\_dcel}!Dcel@{Dcel}}
+\doxysubsubsection{\texorpdfstring{compare\_dcel()}{compare\_dcel()}}
+{\footnotesize\ttfamily bool Dcel\+::compare\+\_\+dcel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_dcel}{Dcel}} $\ast$}]{dcel }\end{DoxyParamCaption})}
+
+
+
+compare dcel with \textquotesingle{}this\textquotesingle{} class 
+
+
+
+Definition at line \mbox{\hyperlink{dcel_8h_source_l00436}{436}} of file \mbox{\hyperlink{dcel_8h_source}{dcel.\+h}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{class_dcel_a9a1acb48a938e641998708e56c6fc302_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dcel_a9a1acb48a938e641998708e56c6fc302_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_dcel_a13505e498139df0c6c93fc9d996ac3b9}\label{class_dcel_a13505e498139df0c6c93fc9d996ac3b9}} 
+\index{Dcel@{Dcel}!create\_dcel@{create\_dcel}}
+\index{create\_dcel@{create\_dcel}!Dcel@{Dcel}}
+\doxysubsubsection{\texorpdfstring{create\_dcel()}{create\_dcel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_dcel}{Dcel}} $\ast$ Dcel\+::create\+\_\+dcel (\begin{DoxyParamCaption}\item[{vector$<$ pair$<$ double, double $>$ $>$}]{initial\+\_\+vertices }\end{DoxyParamCaption})}
+
+
+
+Populating \mbox{\hyperlink{class_dcel}{Dcel}}. 
+
+\mbox{\hyperlink{class_dcel}{Dcel}} $\ast$dcel = new \mbox{\hyperlink{class_dcel}{Dcel()}};
+
+Definition at line \mbox{\hyperlink{dcel_8h_source_l00246}{246}} of file \mbox{\hyperlink{dcel_8h_source}{dcel.\+h}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{class_dcel_a13505e498139df0c6c93fc9d996ac3b9_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dcel_a13505e498139df0c6c93fc9d996ac3b9_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_dcel_a771cfde96ae0d51202b26d6c853e5ab8}\label{class_dcel_a771cfde96ae0d51202b26d6c853e5ab8}} 
+\index{Dcel@{Dcel}!get@{get}}
+\index{get@{get}!Dcel@{Dcel}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vertex}{Vertex}} $\ast$ Dcel\+::get (\begin{DoxyParamCaption}\item[{long long}]{i }\end{DoxyParamCaption})}
+
+
+
+get element specified at position i 
+
+
+
+Definition at line \mbox{\hyperlink{dcel_8h_source_l00364}{364}} of file \mbox{\hyperlink{dcel_8h_source}{dcel.\+h}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dcel_a771cfde96ae0d51202b26d6c853e5ab8_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_dcel_a34c54d5d056b057f6c0cfef81d89296e}\label{class_dcel_a34c54d5d056b057f6c0cfef81d89296e}} 
+\index{Dcel@{Dcel}!get\_Edges@{get\_Edges}}
+\index{get\_Edges@{get\_Edges}!Dcel@{Dcel}}
+\doxysubsubsection{\texorpdfstring{get\_Edges()}{get\_Edges()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_edge}{Edge}} $\ast$ $>$ Dcel\+::get\+\_\+\+Edges (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get vertices 
+
+
+
+Definition at line \mbox{\hyperlink{dcel_8h_source_l00217}{217}} of file \mbox{\hyperlink{dcel_8h_source}{dcel.\+h}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=279pt]{class_dcel_a34c54d5d056b057f6c0cfef81d89296e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_dcel_a2b14ef93b6589e7396f83965e02e5f05}\label{class_dcel_a2b14ef93b6589e7396f83965e02e5f05}} 
+\index{Dcel@{Dcel}!get\_elements@{get\_elements}}
+\index{get\_elements@{get\_elements}!Dcel@{Dcel}}
+\doxysubsubsection{\texorpdfstring{get\_elements()}{get\_elements()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_vertex}{Vertex}} $\ast$ $>$ Dcel\+::get\+\_\+elements (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get elements 
+
+
+
+Definition at line \mbox{\hyperlink{dcel_8h_source_l00234}{234}} of file \mbox{\hyperlink{dcel_8h_source}{dcel.\+h}}.
+
+\mbox{\Hypertarget{class_dcel_acde6cdba4879d503e254800d110f3e6d}\label{class_dcel_acde6cdba4879d503e254800d110f3e6d}} 
+\index{Dcel@{Dcel}!get\_Faces@{get\_Faces}}
+\index{get\_Faces@{get\_Faces}!Dcel@{Dcel}}
+\doxysubsubsection{\texorpdfstring{get\_Faces()}{get\_Faces()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_face}{Face}} $\ast$ $>$ Dcel\+::get\+\_\+\+Faces (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get vertices 
+
+
+
+Definition at line \mbox{\hyperlink{dcel_8h_source_l00222}{222}} of file \mbox{\hyperlink{dcel_8h_source}{dcel.\+h}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=278pt]{class_dcel_acde6cdba4879d503e254800d110f3e6d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_dcel_a6a6ead8114a7c93393750ddd49c47b74}\label{class_dcel_a6a6ead8114a7c93393750ddd49c47b74}} 
+\index{Dcel@{Dcel}!get\_last@{get\_last}}
+\index{get\_last@{get\_last}!Dcel@{Dcel}}
+\doxysubsubsection{\texorpdfstring{get\_last()}{get\_last()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vertex}{Vertex}} $\ast$ Dcel\+::get\+\_\+last (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get last element. 
+
+
+
+Definition at line \mbox{\hyperlink{dcel_8h_source_l00326}{326}} of file \mbox{\hyperlink{dcel_8h_source}{dcel.\+h}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dcel_a6a6ead8114a7c93393750ddd49c47b74_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_dcel_a66aac0aa1bc61e975b49cf3dc7e5d354}\label{class_dcel_a66aac0aa1bc61e975b49cf3dc7e5d354}} 
+\index{Dcel@{Dcel}!get\_size@{get\_size}}
+\index{get\_size@{get\_size}!Dcel@{Dcel}}
+\doxysubsubsection{\texorpdfstring{get\_size()}{get\_size()}}
+{\footnotesize\ttfamily long long Dcel\+::get\+\_\+size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get size 
+
+
+
+Definition at line \mbox{\hyperlink{dcel_8h_source_l00229}{229}} of file \mbox{\hyperlink{dcel_8h_source}{dcel.\+h}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dcel_a66aac0aa1bc61e975b49cf3dc7e5d354_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_dcel_a3ee0c9f548746099e533bfc0ea35a541}\label{class_dcel_a3ee0c9f548746099e533bfc0ea35a541}} 
+\index{Dcel@{Dcel}!get\_Vertices@{get\_Vertices}}
+\index{get\_Vertices@{get\_Vertices}!Dcel@{Dcel}}
+\doxysubsubsection{\texorpdfstring{get\_Vertices()}{get\_Vertices()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_vertex}{Vertex}} $\ast$ $>$ Dcel\+::get\+\_\+\+Vertices (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get vertices 
+
+
+
+Definition at line \mbox{\hyperlink{dcel_8h_source_l00212}{212}} of file \mbox{\hyperlink{dcel_8h_source}{dcel.\+h}}.
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dcel_a3ee0c9f548746099e533bfc0ea35a541_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_dcel_a2b2c4df68cfc3ec53ab8b9f48c86fc08}\label{class_dcel_a2b2c4df68cfc3ec53ab8b9f48c86fc08}} 
+\index{Dcel@{Dcel}!next\_element@{next\_element}}
+\index{next\_element@{next\_element}!Dcel@{Dcel}}
+\doxysubsubsection{\texorpdfstring{next\_element()}{next\_element()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vertex}{Vertex}} $\ast$ Dcel\+::next\+\_\+element (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vertex}{Vertex}} $\ast$}]{vertex }\end{DoxyParamCaption})}
+
+
+
+Get next element. 
+
+
+
+Definition at line \mbox{\hyperlink{dcel_8h_source_l00330}{330}} of file \mbox{\hyperlink{dcel_8h_source}{dcel.\+h}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=337pt]{class_dcel_a2b2c4df68cfc3ec53ab8b9f48c86fc08_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dcel_a2b2c4df68cfc3ec53ab8b9f48c86fc08_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_dcel_a7554bfecc1fdb49d71e0f77154c71987}\label{class_dcel_a7554bfecc1fdb49d71e0f77154c71987}} 
+\index{Dcel@{Dcel}!prev\_element@{prev\_element}}
+\index{prev\_element@{prev\_element}!Dcel@{Dcel}}
+\doxysubsubsection{\texorpdfstring{prev\_element()}{prev\_element()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_vertex}{Vertex}} $\ast$ Dcel\+::prev\+\_\+element (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vertex}{Vertex}} $\ast$}]{vertex }\end{DoxyParamCaption})}
+
+
+
+Get next element. 
+
+
+
+Definition at line \mbox{\hyperlink{dcel_8h_source_l00347}{347}} of file \mbox{\hyperlink{dcel_8h_source}{dcel.\+h}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=335pt]{class_dcel_a7554bfecc1fdb49d71e0f77154c71987_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_dcel_acf3bbca734c0a4d24429fd008a910f52}\label{class_dcel_acf3bbca734c0a4d24429fd008a910f52}} 
+\index{Dcel@{Dcel}!remove\_vertex@{remove\_vertex}}
+\index{remove\_vertex@{remove\_vertex}!Dcel@{Dcel}}
+\doxysubsubsection{\texorpdfstring{remove\_vertex()}{remove\_vertex()}}
+{\footnotesize\ttfamily void Dcel\+::remove\+\_\+vertex (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vertex}{Vertex}} $\ast$}]{vertex }\end{DoxyParamCaption})}
+
+
+
+removes the vertex, from the list, rest stays connected 
+
+
+
+Definition at line \mbox{\hyperlink{dcel_8h_source_l00369}{369}} of file \mbox{\hyperlink{dcel_8h_source}{dcel.\+h}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{class_dcel_acf3bbca734c0a4d24429fd008a910f52_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dcel_acf3bbca734c0a4d24429fd008a910f52_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_dcel_ab4469f81be4d96142689eb2d03281b34}\label{class_dcel_ab4469f81be4d96142689eb2d03281b34}} 
+\index{Dcel@{Dcel}!replace@{replace}}
+\index{replace@{replace}!Dcel@{Dcel}}
+\doxysubsubsection{\texorpdfstring{replace()}{replace()}}
+{\footnotesize\ttfamily void Dcel\+::replace (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_dcel}{Dcel}} $\ast$}]{dcel2 }\end{DoxyParamCaption})}
+
+
+
+replace a cyclical list with other 
+
+
+
+Definition at line \mbox{\hyperlink{dcel_8h_source_l00239}{239}} of file \mbox{\hyperlink{dcel_8h_source}{dcel.\+h}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=287pt]{class_dcel_ab4469f81be4d96142689eb2d03281b34_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{class_dcel_a37cc2200f72fa6d95c78c4b3171b8c50}\label{class_dcel_a37cc2200f72fa6d95c78c4b3171b8c50}} 
+\index{Dcel@{Dcel}!set\_Edges@{set\_Edges}}
+\index{set\_Edges@{set\_Edges}!Dcel@{Dcel}}
+\doxysubsubsection{\texorpdfstring{set\_Edges()}{set\_Edges()}}
+{\footnotesize\ttfamily void Dcel\+::set\+\_\+\+Edges (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_edge}{Edge}} $\ast$ $>$}]{edges }\end{DoxyParamCaption})}
+
+
+
+set vertices 
+
+
+
+Definition at line \mbox{\hyperlink{dcel_8h_source_l00157}{157}} of file \mbox{\hyperlink{dcel_8h_source}{dcel.\+h}}.
+
+\mbox{\Hypertarget{class_dcel_ae94fee7b76977915e191d14f8d5f18c1}\label{class_dcel_ae94fee7b76977915e191d14f8d5f18c1}} 
+\index{Dcel@{Dcel}!set\_Faces@{set\_Faces}}
+\index{set\_Faces@{set\_Faces}!Dcel@{Dcel}}
+\doxysubsubsection{\texorpdfstring{set\_Faces()}{set\_Faces()}}
+{\footnotesize\ttfamily void Dcel\+::set\+\_\+\+Faces (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_face}{Face}} $\ast$ $>$}]{faces }\end{DoxyParamCaption})}
+
+
+
+set vertices 
+
+
+
+Definition at line \mbox{\hyperlink{dcel_8h_source_l00162}{162}} of file \mbox{\hyperlink{dcel_8h_source}{dcel.\+h}}.
+
+\mbox{\Hypertarget{class_dcel_a3659abea01869a10351d0f7d9971a7b6}\label{class_dcel_a3659abea01869a10351d0f7d9971a7b6}} 
+\index{Dcel@{Dcel}!set\_Vertices@{set\_Vertices}}
+\index{set\_Vertices@{set\_Vertices}!Dcel@{Dcel}}
+\doxysubsubsection{\texorpdfstring{set\_Vertices()}{set\_Vertices()}}
+{\footnotesize\ttfamily void Dcel\+::set\+\_\+\+Vertices (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{class_vertex}{Vertex}} $\ast$ $>$}]{vertices }\end{DoxyParamCaption})}
+
+
+
+set vertices 
+
+
+
+Definition at line \mbox{\hyperlink{dcel_8h_source_l00152}{152}} of file \mbox{\hyperlink{dcel_8h_source}{dcel.\+h}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_dcel_a83d85dda82e7ee54437c869987e6a250}\label{class_dcel_a83d85dda82e7ee54437c869987e6a250}} 
+\index{Dcel@{Dcel}!edges@{edges}}
+\index{edges@{edges}!Dcel@{Dcel}}
+\doxysubsubsection{\texorpdfstring{edges}{edges}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{class_edge}{Edge}} $\ast$$>$ Dcel\+::edges}
+
+
+
+Definition at line \mbox{\hyperlink{dcel_8h_source_l00022}{22}} of file \mbox{\hyperlink{dcel_8h_source}{dcel.\+h}}.
+
+\mbox{\Hypertarget{class_dcel_acb5fadbf0d20628b68959419fa51a7df}\label{class_dcel_acb5fadbf0d20628b68959419fa51a7df}} 
+\index{Dcel@{Dcel}!faces@{faces}}
+\index{faces@{faces}!Dcel@{Dcel}}
+\doxysubsubsection{\texorpdfstring{faces}{faces}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{class_face}{Face}} $\ast$$>$ Dcel\+::faces}
+
+
+
+Definition at line \mbox{\hyperlink{dcel_8h_source_l00023}{23}} of file \mbox{\hyperlink{dcel_8h_source}{dcel.\+h}}.
+
+\mbox{\Hypertarget{class_dcel_aa423d8837fcb6a464d9878dfb331e3dc}\label{class_dcel_aa423d8837fcb6a464d9878dfb331e3dc}} 
+\index{Dcel@{Dcel}!vertices@{vertices}}
+\index{vertices@{vertices}!Dcel@{Dcel}}
+\doxysubsubsection{\texorpdfstring{vertices}{vertices}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{class_vertex}{Vertex}} $\ast$$>$ Dcel\+::vertices}
+
+
+
+Collection of vertices, edges, faces. 
+
+
+
+Definition at line \mbox{\hyperlink{dcel_8h_source_l00021}{21}} of file \mbox{\hyperlink{dcel_8h_source}{dcel.\+h}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Code/\mbox{\hyperlink{dcel_8h}{dcel.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,81 @@
+\hypertarget{visualize_8py_source}{}\doxysection{visualize.\+py}
+\label{visualize_8py_source}\index{Code/visualize.py@{Code/visualize.py}}
+\mbox{\hyperlink{visualize_8py}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{visualize_8py_source_l00001}\mbox{\hyperlink{namespacevisualize}{00001}}\ \textcolor{keyword}{import}\ turtle}
+\DoxyCodeLine{\Hypertarget{visualize_8py_source_l00002}00002\ \textcolor{keyword}{import}\ time}
+\DoxyCodeLine{\Hypertarget{visualize_8py_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{visualize_8py_source_l00004}00004\ }
+\DoxyCodeLine{\Hypertarget{visualize_8py_source_l00005}\mbox{\hyperlink{namespacevisualize_adcb2f8613b1103dc0e69feab78cec364}{00005}}\ \textcolor{keyword}{def\ }\mbox{\hyperlink{namespacevisualize_adcb2f8613b1103dc0e69feab78cec364}{draw}}(file\_name,\ color,\ show\_number,\ factor,\ shift\_x,\ shift\_y):}
+\DoxyCodeLine{\Hypertarget{visualize_8py_source_l00006}00006\ \ \ \ \ \textcolor{keyword}{with}\ open(file\_name)\ \textcolor{keyword}{as}\ file:}
+\DoxyCodeLine{\Hypertarget{visualize_8py_source_l00007}00007\ \ \ \ \ \ \ \ \ list\ =\ [tuple(float(s)\ \textcolor{keywordflow}{for}\ s\ \textcolor{keywordflow}{in}\ line.strip().split())\ \textcolor{keywordflow}{for}\ line\ \textcolor{keywordflow}{in}\ file]}
+\DoxyCodeLine{\Hypertarget{visualize_8py_source_l00008}00008\ \ \ \ \ turtle.speed(2)}
+\DoxyCodeLine{\Hypertarget{visualize_8py_source_l00009}00009\ \ \ \ \ k\ =\ -\/1}
+\DoxyCodeLine{\Hypertarget{visualize_8py_source_l00010}00010\ \ \ \ \ flag\ =\ \textcolor{keyword}{False}}
+\DoxyCodeLine{\Hypertarget{visualize_8py_source_l00011}00011\ \ \ \ \ list\_final\ =\ []}
+\DoxyCodeLine{\Hypertarget{visualize_8py_source_l00012}00012\ \ \ \ \ col\ =\ 1}
+\DoxyCodeLine{\Hypertarget{visualize_8py_source_l00013}00013\ \ \ \ \ screen\ =\ turtle.Screen()}
+\DoxyCodeLine{\Hypertarget{visualize_8py_source_l00014}00014\ \ \ \ \ screen.colormode(255)}
+\DoxyCodeLine{\Hypertarget{visualize_8py_source_l00015}00015\ \ \ \ \ index\ =\ 1}
+\DoxyCodeLine{\Hypertarget{visualize_8py_source_l00016}00016\ \ \ \ \ sum\_x\ =\ 0}
+\DoxyCodeLine{\Hypertarget{visualize_8py_source_l00017}00017\ \ \ \ \ sum\_y\ =\ 0}
+\DoxyCodeLine{\Hypertarget{visualize_8py_source_l00018}00018\ \ \ \ \ count\ =\ 0}
+\DoxyCodeLine{\Hypertarget{visualize_8py_source_l00019}00019\ \ \ \ \ \textcolor{keywordflow}{for}\ element\ \textcolor{keywordflow}{in}\ list:}
+\DoxyCodeLine{\Hypertarget{visualize_8py_source_l00020}00020\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ \textcolor{keywordflow}{not}\ flag:}
+\DoxyCodeLine{\Hypertarget{visualize_8py_source_l00021}00021\ \ \ \ \ \ \ \ \ \ \ \ \ k\ =\ element[0]}
+\DoxyCodeLine{\Hypertarget{visualize_8py_source_l00022}00022\ \ \ \ \ \ \ \ \ \ \ \ \ count\ =\ k-\/1}
+\DoxyCodeLine{\Hypertarget{visualize_8py_source_l00023}00023\ \ \ \ \ \ \ \ \ \ \ \ \ flag\ =\ \textcolor{keyword}{True}}
+\DoxyCodeLine{\Hypertarget{visualize_8py_source_l00024}00024\ \ \ \ \ \ \ \ \ \ \ \ \ list\_final\ =\ []}
+\DoxyCodeLine{\Hypertarget{visualize_8py_source_l00025}00025\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{\Hypertarget{visualize_8py_source_l00026}00026\ \ \ \ \ \ \ \ \ \ \ \ \ list\_final.append((element[0],\ element[1]))}
+\DoxyCodeLine{\Hypertarget{visualize_8py_source_l00027}00027\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ k\ !=\ 1:}
+\DoxyCodeLine{\Hypertarget{visualize_8py_source_l00028}00028\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ sum\_x\ =\ sum\_x+element[0]}
+\DoxyCodeLine{\Hypertarget{visualize_8py_source_l00029}00029\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ sum\_y\ =\ sum\_y+element[1]}
+\DoxyCodeLine{\Hypertarget{visualize_8py_source_l00030}00030\ }
+\DoxyCodeLine{\Hypertarget{visualize_8py_source_l00031}00031\ \ \ \ \ \ \ \ \ \ \ \ \ k\ =\ k-\/1}
+\DoxyCodeLine{\Hypertarget{visualize_8py_source_l00032}00032\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ k\ ==\ 0:}
+\DoxyCodeLine{\Hypertarget{visualize_8py_source_l00033}00033\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ print(list\_final)}
+\DoxyCodeLine{\Hypertarget{visualize_8py_source_l00034}00034\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ turtle.color(\textcolor{stringliteral}{'black'},\ color)}
+\DoxyCodeLine{\Hypertarget{visualize_8py_source_l00035}00035\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ turtle.begin\_fill()}
+\DoxyCodeLine{\Hypertarget{visualize_8py_source_l00036}00036\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ j\ =\ 0}
+\DoxyCodeLine{\Hypertarget{visualize_8py_source_l00037}00037\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ turtle.penup()}
+\DoxyCodeLine{\Hypertarget{visualize_8py_source_l00038}00038\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ turtle.goto(}
+\DoxyCodeLine{\Hypertarget{visualize_8py_source_l00039}00039\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (shift\_x+list\_final[0][0])/factor,\ (shift\_y+list\_final[0][1])/factor)}
+\DoxyCodeLine{\Hypertarget{visualize_8py_source_l00040}00040\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ turtle.pendown()}
+\DoxyCodeLine{\Hypertarget{visualize_8py_source_l00041}00041\ }
+\DoxyCodeLine{\Hypertarget{visualize_8py_source_l00042}00042\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ list\_final.append(list\_final[0])}
+\DoxyCodeLine{\Hypertarget{visualize_8py_source_l00043}00043\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ i\ \textcolor{keywordflow}{in}\ range(0,\ len(list\_final)):}
+\DoxyCodeLine{\Hypertarget{visualize_8py_source_l00044}00044\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ turtle.goto(}
+\DoxyCodeLine{\Hypertarget{visualize_8py_source_l00045}00045\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (shift\_x+list\_final[j][0])/factor,\ (shift\_y+list\_final[j][1])/factor)}
+\DoxyCodeLine{\Hypertarget{visualize_8py_source_l00046}00046\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ j\ =\ j\ +\ 1}
+\DoxyCodeLine{\Hypertarget{visualize_8py_source_l00047}00047\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ turtle.end\_fill()}
+\DoxyCodeLine{\Hypertarget{visualize_8py_source_l00048}00048\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ show\_number:}
+\DoxyCodeLine{\Hypertarget{visualize_8py_source_l00049}00049\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ turtle.penup()}
+\DoxyCodeLine{\Hypertarget{visualize_8py_source_l00050}00050\ }
+\DoxyCodeLine{\Hypertarget{visualize_8py_source_l00051}00051\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ turtle.goto((shift\_x+sum\_x/count)/factor,}
+\DoxyCodeLine{\Hypertarget{visualize_8py_source_l00052}00052\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (shift\_y+sum\_y/count)/factor)}
+\DoxyCodeLine{\Hypertarget{visualize_8py_source_l00053}00053\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ sum\_x\ =\ 0}
+\DoxyCodeLine{\Hypertarget{visualize_8py_source_l00054}00054\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ sum\_y\ =\ 0}
+\DoxyCodeLine{\Hypertarget{visualize_8py_source_l00055}00055\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ turtle.pendown()}
+\DoxyCodeLine{\Hypertarget{visualize_8py_source_l00056}00056\ }
+\DoxyCodeLine{\Hypertarget{visualize_8py_source_l00057}00057\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ turtle.write(str(index),\ align=\textcolor{stringliteral}{"{}center"{}},}
+\DoxyCodeLine{\Hypertarget{visualize_8py_source_l00058}00058\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ font=(\textcolor{stringliteral}{"{}Cooper\ Black"{}},\ 10,\ \textcolor{stringliteral}{"{}italic"{}}))}
+\DoxyCodeLine{\Hypertarget{visualize_8py_source_l00059}00059\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ index\ =\ index+1}
+\DoxyCodeLine{\Hypertarget{visualize_8py_source_l00060}00060\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ flag\ =\ \textcolor{keyword}{False}}
+\DoxyCodeLine{\Hypertarget{visualize_8py_source_l00061}00061\ \ \ \ \ \ \ \ \ print(list)}
+\DoxyCodeLine{\Hypertarget{visualize_8py_source_l00062}00062\ }
+\DoxyCodeLine{\Hypertarget{visualize_8py_source_l00063}00063\ }
+\DoxyCodeLine{\Hypertarget{visualize_8py_source_l00064}00064\ \textcolor{keyword}{with}\ open(\textcolor{stringliteral}{"{}input.txt"{}})\ \textcolor{keyword}{as}\ file:}
+\DoxyCodeLine{\Hypertarget{visualize_8py_source_l00065}\mbox{\hyperlink{namespacevisualize_a89bc4494c1cd47877d8f6a7ead1396fb}{00065}}\ \ \ \ \ list\ =\ [tuple(float(s)\ \textcolor{keywordflow}{for}\ s\ \textcolor{keywordflow}{in}\ line.strip().split())\ \textcolor{keywordflow}{for}\ line\ \textcolor{keywordflow}{in}\ file]}
+\DoxyCodeLine{\Hypertarget{visualize_8py_source_l00066}\mbox{\hyperlink{namespacevisualize_a4c8cf2c4b4bbf8d3e61925c7d09ee653}{00066}}\ sum\_x\ =\ 0}
+\DoxyCodeLine{\Hypertarget{visualize_8py_source_l00067}\mbox{\hyperlink{namespacevisualize_aa0b4d32866c19a1e1174d93e6a19da6e}{00067}}\ sum\_y\ =\ 0}
+\DoxyCodeLine{\Hypertarget{visualize_8py_source_l00068}00068\ \textcolor{keywordflow}{for}\ i\ \textcolor{keywordflow}{in}\ range(1,\ len(list)):}
+\DoxyCodeLine{\Hypertarget{visualize_8py_source_l00069}00069\ \ \ \ \ sum\_x\ =\ sum\_x+list[i][0]}
+\DoxyCodeLine{\Hypertarget{visualize_8py_source_l00070}00070\ \ \ \ \ sum\_y\ =\ sum\_y+list[i][1]}
+\DoxyCodeLine{\Hypertarget{visualize_8py_source_l00071}00071\ sum\_x\ =\ sum\_x/list[0][0]}
+\DoxyCodeLine{\Hypertarget{visualize_8py_source_l00072}00072\ sum\_y\ =\ sum\_y/list[0][0]}
+\DoxyCodeLine{\Hypertarget{visualize_8py_source_l00073}00073\ \mbox{\hyperlink{namespacevisualize_adcb2f8613b1103dc0e69feab78cec364}{draw}}(\textcolor{stringliteral}{"{}input.txt"{}},\ \textcolor{stringliteral}{"{}white"{}},\ \textcolor{keyword}{False},\ 0.05,\ -\/1*sum\_x,\ -\/1*sum\_y)}
+\DoxyCodeLine{\Hypertarget{visualize_8py_source_l00074}00074\ \mbox{\hyperlink{namespacevisualize_adcb2f8613b1103dc0e69feab78cec364}{draw}}(\textcolor{stringliteral}{"{}output.txt"{}},\ \textcolor{stringliteral}{"{}cyan"{}},\ \textcolor{keyword}{True},\ 0.05,\ -\/1*sum\_x,\ -\/1*sum\_y)}
+\DoxyCodeLine{\Hypertarget{visualize_8py_source_l00075}00075\ time.sleep(1000)}
+
+\end{DoxyCode}

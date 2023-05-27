@@ -1,0 +1,194 @@
+\hypertarget{merging_8h_source}{}\doxysection{merging.\+h}
+\label{merging_8h_source}\index{Code/merging.h@{Code/merging.h}}
+\mbox{\hyperlink{merging_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00001}00001\ \textcolor{preprocessor}{\#include\ <bits/stdc++.h>}}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00002}00002\ \textcolor{preprocessor}{\#include\ <algorithm>}}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00003}00003\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00004}00004\ }
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00006}\mbox{\hyperlink{class_merging}{00006}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_merging}{Merging}}}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00007}00007\ \{}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00008}00008\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00010}00010\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_merging_a0b3683098e1b5d526ea4b94df8a81131}{merging}}(vector<Dcel\ *>\ dcels,\ vector<pair<double,\ double>>\ vecx);}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00011}00011\ \};}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00012}\mbox{\hyperlink{merging_8h_aa7877dfefa6aa65eaa987c6a6c82046b}{00012}}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{merging_8h_aa7877dfefa6aa65eaa987c6a6c82046b}{clockwise\_angle\_merging}}(pair<double,\ double>\ v1,\ pair<double,\ double>\ v2,\ pair<double,\ double>\ v3)}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00013}00013\ \{}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00014}00014\ \ \ \ \ pair<double,\ double>\ v1v2(v2.first\ -\/\ v1.first,\ v2.second\ -\/\ v1.second);}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00015}00015\ \ \ \ \ pair<double,\ double>\ v3v2(v2.first\ -\/\ v3.first,\ v2.second\ -\/\ v3.second);}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00016}00016\ }
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00017}00017\ \ \ \ \ \textcolor{keywordtype}{double}\ dot\_product\ =\ v1v2.first\ *\ v3v2.first\ +\ v1v2.second\ *\ v3v2.second;}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00018}00018\ \ \ \ \ \textcolor{keywordtype}{double}\ cross\_product\ =\ v1v2.first\ *\ v3v2.second\ -\/\ v1v2.second\ *\ v3v2.first;}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00019}00019\ }
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00020}00020\ \ \ \ \ \textcolor{keywordflow}{if}\ (dot\_product\ ==\ 0\ \&\&\ cross\_product\ ==\ 0)}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00021}00021\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00022}00022\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ -\/1000;}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00023}00023\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00024}00024\ }
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00025}00025\ \ \ \ \ \textcolor{keywordtype}{double}\ angle\ =\ atan2(cross\_product,\ dot\_product);}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00026}00026\ \ \ \ \ \textcolor{keywordtype}{double}\ angle\_degrees\ =\ angle\ *\ 180\ /\ M\_PI;}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00027}00027\ \ \ \ \ \textcolor{keywordflow}{return}\ angle\_degrees;}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00028}00028\ \}}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00029}\mbox{\hyperlink{merging_8h_a5ca5e0dfa9ac095e397a07a534b86a15}{00029}}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{merging_8h_a5ca5e0dfa9ac095e397a07a534b86a15}{get\_angle\_merging}}(pair<double,\ double>\ a,\ pair<double,\ double>\ b,\ pair<double,\ double>\ c)}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00030}00030\ \{}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00031}00031\ \ \ \ \ \textcolor{keywordtype}{double}\ cangle\ =\ \mbox{\hyperlink{auxiliary__class_8h_a622317f769a90cb32e251ce2345882e7}{clockwise\_angle}}(a,\ b,\ c);}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00032}00032\ \ \ \ \ \textcolor{keywordflow}{if}\ (cangle\ ==\ -\/1000)}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00033}00033\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 180;}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00034}00034\ \ \ \ \ \textcolor{keywordflow}{if}\ (cangle\ <\ 0)}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00035}00035\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00036}00036\ \ \ \ \ \ \ \ \ cangle\ +=\ 360;}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00037}00037\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00038}00038\ \ \ \ \ \textcolor{keywordflow}{return}\ cangle;}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00039}00039\ \}}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00040}\mbox{\hyperlink{class_merging_a0b3683098e1b5d526ea4b94df8a81131}{00040}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_merging_a0b3683098e1b5d526ea4b94df8a81131}{Merging::merging}}(vector<Dcel\ *>\ dcels,\ vector<pair<double,\ double>>\ vecx)}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00041}00041\ }
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00042}00042\ }
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00043}00043\ }
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00044}00044\ }
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00045}00045\ }
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00046}00046\ }
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00047}00047\ }
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00048}00048\ }
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00049}00049\ }
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00050}00050\ }
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00051}00051\ }
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00052}00052\ }
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00053}00053\ }
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00054}00054\ }
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00055}00055\ }
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00056}00056\ }
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00057}00057\ }
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00058}00058\ }
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00059}00059\ }
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00060}00060\ }
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00061}00061\ }
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00062}00062\ }
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00063}00063\ }
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00064}00064\ }
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00065}00065\ }
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00066}00066\ }
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00067}00067\ }
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00068}00068\ }
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00069}00069\ }
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00070}00070\ }
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00071}00071\ }
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00072}00072\ }
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00073}00073\ }
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00074}00074\ }
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00075}00075\ }
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00076}00076\ }
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00077}00077\ \{}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00078}00078\ }
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00079}00079\ \ \ \ \ vector<pair<pair<double,\ double>,\ pair<double,\ double>>>\ LLE;}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00080}00080\ \ \ \ \ vector<Dcel\ *>\ POLYGON;}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00081}00081\ }
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00082}00082\ \ \ \ \ vector<long\ long>\ LUP;}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00083}00083\ \ \ \ \ map<pair<double,\ double>,\ vector<pair<long\ long,\ pair<double,\ double>>>>\ LP;}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00084}00084\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ i\ =\ 0;\ i\ <\ dcels.size();\ i++)}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00085}00085\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00086}00086\ \ \ \ \ \ \ \ \ POLYGON.push\_back(dcels[i]);}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00087}00087\ \ \ \ \ \ \ \ \ LLE.push\_back(\{dcels[i]-\/>get\_Vertices()[dcels[i]-\/>get\_Vertices().size()\ -\/\ 1]-\/>get\_coordinates(),\ dcels[i]-\/>get\_Vertices()[0]-\/>get\_coordinates()\});}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00088}00088\ }
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00089}00089\ }
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00090}00090\ \ \ \ \ \ \ \ \ LUP.push\_back(i);}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00091}00091\ }
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00092}00092\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ i\ =\ 0;\ i\ <\ vecx.size();\ i++)}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00093}00093\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00094}00094\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ j\ =\ 0;\ j\ <\ dcels.size();\ j++)}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00095}00095\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00096}00096\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ k\ =\ 0;\ k\ <\ dcels[j]-\/>get\_Vertices().size();\ k++)}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00097}00097\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00098}00098\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (dcels[j]-\/>get\_Vertices()[k]-\/>get\_coordinates()\ ==\ vecx[i])}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00099}00099\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00100}00100\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ pair<double,\ double>\ next\_element\ =\ dcels[j]-\/>next\_element(dcels[j]-\/>get\_Vertices()[k])-\/>get\_coordinates();}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00101}00101\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (next\_element\ !=\ vecx[(i\ +\ 1)\ \%\ vecx.size()])}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00102}00102\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00103}00103\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ LP[vecx[i]].push\_back(\{j,\ next\_element\});}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00104}00104\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00105}00105\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00106}00106\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00107}00107\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00108}00108\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00109}00109\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00110}00110\ }
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00111}00111\ \ \ \ \ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ NP\ =\ dcels.size();}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00112}00112\ \ \ \ \ map<long\ long,\ bool>\ LDP;}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00113}00113\ \ \ \ \ \textcolor{keywordtype}{int}\ dig\ =\ NP\ -\/\ 2;}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00114}00114\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ j\ =\ 0;\ j\ <\ dcels.size();\ j++)}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00115}00115\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00116}00116\ \ \ \ \ \ \ \ \ pair<pair<double,\ double>,\ pair<double,\ double>>\ pr\ =\ LLE[j];}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00117}00117\ \ \ \ \ \ \ \ \ pair<double,\ double>\ prev\_VT,\ VT,\ next\_VT,\ prev\_VS,\ VS,\ next\_VS;}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00118}00118\ \ \ \ \ \ \ \ \ VT\ =\ pr.second;}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00119}00119\ \ \ \ \ \ \ \ \ VS\ =\ pr.first;}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00120}00120\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ i\ =\ 0;\ i\ <\ vecx.size();\ i++)}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00121}00121\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00122}00122\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (vecx[i]\ ==\ VT)}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00123}00123\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00124}00124\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ next\_VT\ =\ vecx[(i\ +\ 1)\ \%\ vecx.size()];}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00125}00125\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ prev\_VT\ =\ vecx[(i\ -\/\ 1\ +\ vecx.size())\ \%\ vecx.size()];}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00126}00126\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00127}00127\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (vecx[i]\ ==\ VS)}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00128}00128\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00129}00129\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ next\_VS\ =\ vecx[(i\ +\ 1)\ \%\ vecx.size()];}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00130}00130\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ prev\_VS\ =\ vecx[(i\ -\/\ 1\ +\ vecx.size())\ \%\ vecx.size()];}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00131}00131\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00132}00132\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00133}00133\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ ((LP[pr.first].size()\ >\ 2\ \&\&\ LP[pr.second].size()\ >\ 2)\ ||}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00134}00134\ \ \ \ \ \ \ \ \ \ \ \ \ (LP[pr.first].size()\ >\ 2\ \&\&\ \mbox{\hyperlink{merging_8h_a5ca5e0dfa9ac095e397a07a534b86a15}{get\_angle\_merging}}(prev\_VT,\ VT,\ next\_VT)\ <=\ 180)\ ||}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00135}00135\ \ \ \ \ \ \ \ \ \ \ \ \ (LP[pr.second].size()\ >\ 2\ \&\&\ \mbox{\hyperlink{merging_8h_a5ca5e0dfa9ac095e397a07a534b86a15}{get\_angle\_merging}}(prev\_VS,\ VS,\ next\_VS)\ <=\ 180)\ ||}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00136}00136\ \ \ \ \ \ \ \ \ \ \ \ \ (\mbox{\hyperlink{merging_8h_a5ca5e0dfa9ac095e397a07a534b86a15}{get\_angle\_merging}}(prev\_VS,\ VS,\ next\_VS)\ <=\ 180\ \&\&\ \mbox{\hyperlink{merging_8h_a5ca5e0dfa9ac095e397a07a534b86a15}{get\_angle\_merging}}(prev\_VT,\ VT,\ next\_VT)\ <=\ 180))}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00137}00137\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00138}00138\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_vertex}{Vertex}}\ *J2\ =\ POLYGON[j]-\/>get(0);}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00139}00139\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_vertex}{Vertex}}\ *I2\ =\ POLYGON[j]-\/>get(POLYGON[j]-\/>get\_size()\ -\/\ 1);}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00140}00140\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_vertex}{Vertex}}\ *J3\ =\ POLYGON[j]-\/>next\_element(J2);}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00141}00141\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_vertex}{Vertex}}\ *I1\ =\ POLYGON[j]-\/>get(POLYGON[j]-\/>get\_size()\ -\/\ 2);}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00142}00142\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ u\ =\ -\/1;}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00143}00143\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ k\ =\ 0;\ k\ <\ LP[POLYGON[j]-\/>get(0)-\/>get\_coordinates()].size();\ k++)}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00144}00144\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00145}00145\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (LP[POLYGON[j]-\/>get(0)-\/>get\_coordinates()][k].second\ ==\ POLYGON[j]-\/>get(POLYGON[j]-\/>get\_size()\ -\/\ 1)-\/>get\_coordinates())}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00146}00146\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00147}00147\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ u\ =\ LP[POLYGON[j]-\/>get(0)-\/>get\_coordinates()][k].first;}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00148}00148\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_vertex}{Vertex}}\ *J1\ =\ POLYGON[u]-\/>prev\_element(POLYGON[j]-\/>get(0));}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00149}00149\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_vertex}{Vertex}}\ *I3\ =\ POLYGON[u]-\/>next\_element(POLYGON[j]-\/>get(POLYGON[j]-\/>get\_size()\ -\/\ 1));}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00150}00150\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_auxiliary_class_a9871648fc6f4a5a7511f6be95f25ffd2}{AuxiliaryClass::get\_angle}}(I1,\ I2,\ I3)\ <=\ 180\ \&\&\ \mbox{\hyperlink{class_auxiliary_class_a9871648fc6f4a5a7511f6be95f25ffd2}{AuxiliaryClass::get\_angle}}(J1,\ J2,\ J3)\ <=\ 180)}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00151}00151\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00152}00152\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ NP\ =\ NP\ +\ 1;}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00153}00153\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ LDP[j]\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00154}00154\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ LDP[u]\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00155}00155\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ LDP[NP]\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00156}00156\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ LUP[j]\ =\ NP;}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00157}00157\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ LUP[u]\ =\ NP;}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00158}00158\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ h\ =\ 0;\ h\ <\ LUP.size();\ h++)}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00159}00159\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00160}00160\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (LUP[h]\ ==\ j\ ||\ LUP[h]\ ==\ u)}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00161}00161\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00162}00162\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ LUP[h]\ =\ NP;}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00163}00163\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00164}00164\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00165}00165\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00166}00166\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00167}00167\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00168}00168\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00169}00169\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00170}00170\ \ \ \ \ ofstream\ output\_file\_merging;}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00171}00171\ \ \ \ \ output\_file\_merging.open(\textcolor{stringliteral}{"{}output\_merging.txt"{}});}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00172}00172\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ i\ =\ 0;\ i\ <\ LUP.size();\ i++)}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00173}00173\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00174}00174\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ j\ =\ i\ +\ 1;\ j\ <\ LUP.size();\ j++)}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00175}00175\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00176}00176\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (LUP[i]\ ==\ LUP[j])}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00177}00177\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00178}00178\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ cout\ <<\ i\ +\ 1\ <<\ \textcolor{stringliteral}{"{}\ "{}}\ <<\ j\ +\ 1\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00179}00179\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00180}00180\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00181}00181\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00182}00182\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ i\ =\ 0;\ i\ <\ LUP.size();\ i++)}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00183}00183\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00184}00184\ \ \ \ \ \ \ \ \ output\_file\_merging\ <<\ i\ +\ 1\ <<\ \textcolor{stringliteral}{"{}\ "{}}\ <<\ LUP[i]\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00185}00185\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00186}00186\ }
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00187}00187\ \ \ \ \ output\_file\_merging.close();}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00188}00188\ }
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00189}00189\ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{merging_8h_source_l00190}00190\ \}}
+
+\end{DoxyCode}

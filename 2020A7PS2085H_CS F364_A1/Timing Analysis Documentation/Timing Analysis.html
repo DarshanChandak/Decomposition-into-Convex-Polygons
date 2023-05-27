@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Timing Analysis</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <center>
+        <h1>Timing Analysis</h1>
+    </center>
+
+    <hr>
+    <div class="row">
+
+        <div class="column">
+
+            <h2><b>Test Case - 1 : Before Decomposition</b></h2>
+            <p>
+                <img src="TC/India.png" width=" 100%" height="600" alt="TestCase 1" class="center">
+            </p>
+            <p>
+                Number of Vertices: 135
+                <br>
+                <br><a href="https://pastebin.com/nHjH4pKq">Input Link</a>
+            </p>
+        </div>
+
+        <div class="column">
+
+            <h2><b>Test Case - 1 : After Decomposition</b></h2>
+            <p>
+                <img src="TC/India-decompose.png" width=" 100%" height="600" alt="TestCase 1" class="center">
+            </p>
+            <p>
+                Merge Decompositions 4 and 65,
+                17 and 48,
+                20 and 100,
+                23 and 60,
+                28 and 66,
+                29 and 70,
+                30 and 72,
+                34 and 55,
+                41 and 56,
+                45 and 57,
+                52 and 64,
+                54 and 62,
+                61 and 67,
+                63 and 69.
+                <br>
+                <br>Elapsed Time in Decomposition: 0.976474s
+                <br>Elapsed Time in Merging: 1.27497s
+                <br>Total Elapsed Time: 2.25144s
+            </p>
+        </div>
+    </div>
+
+    <hr>
+    <div class="row">
+
+        <div class="column">
+            <h2>
+                <b>Test Case - 2 : Before Decomposition</b>
+            </h2>
+            <p>
+                <img src="TC/1.png" width=" 100%" height="600" alt="TestCase 2" class="center">
+            </p>
+            <p>
+                Number of Vertices: 14
+                <br>
+                <br><a href="https://pastebin.com/1wmzDMtd">Input Link</a>
+            </p>
+        </div>
+
+        <div class="column">
+
+            <h2><b>Test Case - 2 : After Decomposition</b></h2>
+            <p>
+                <img src="TC/1-decompose.png" width=" 100%" height="600" alt="TestCase 2" class="center">
+            </p>
+            <p>
+                Elapsed Time in Decomposition: 0.002997s
+                <br>Elapsed Time in Merging: 0.013001s
+                <br>Total Elapsed Time: 0.015998s
+            </p>
+
+        </div>
+    </div>
+
+    <hr>
+    <div class="row">
+
+        <div class="column">
+            <h2>
+                <b>Test Case - 3 : Before Decomposition</b>
+            </h2>
+            <p>
+                <img src="TC/2.png" width=" 100%" height="600" alt="TestCase 3" class="center">
+            </p>
+            <p>
+                Number of Vertices: 12
+                <br>
+                <br><a href="https://pastebin.com/ERQ9qX0C">Input Link</a>
+            </p>
+        </div>
+
+        <div class="column">
+
+            <h2><b>Test Case - 3 : After Decomposition</b></h2>
+            <p>
+                <img src="TC/2-decompose.png" width=" 100%" height="600" alt="TestCase 3" class="center">
+            </p>
+            <p>
+                Merge Decompositions 5 and 7
+                <br>
+                <br>Elapsed Time in Decomposition: 0.001999s
+                <br>Elapsed Time in Merging: 0.013763s
+                <br>Total Elapsed Time: 0.015762s
+            </p>
+
+        </div>
+    </div>
+
+    <hr>
+    <div class="row">
+
+        <div class="column">
+            <h2>
+                <b>Test Case - 4 : Before Decomposition</b>
+            </h2>
+            <p>
+                <img src="TC/3.png" width=" 100%" height="600" alt="TestCase 4" class="center">
+            </p>
+            <p>
+                Number of Vertices: 5
+                <br>
+                <br><a href="https://pastebin.com/Fs86g02R">Input Link</a>
+            </p>
+        </div>
+
+        <div class="column">
+
+            <h2><b>Test Case - 4 : After Decomposition</b></h2>
+            <p>
+                <img src="TC/3-decompose.png" width=" 100%" height="600" alt="TestCase 4" class="center">
+            </p>
+            <p>
+                Elapsed Time in Decomposition: 0.002002s
+                <br>Elapsed Time in Merging: 0.003997s
+                <br>Total Elapsed Time: 0.005999s
+            </p>
+
+        </div>
+    </div>
+
+    <hr>
+    <div class="row">
+
+        <div class="column">
+            <h2>
+                <b>Test Case - 5 : Before Decomposition</b>
+            </h2>
+            <p>
+                <img src="TC/4.png" width=" 100%" height="600" alt="TestCase 5" class="center">
+            </p>
+            <p>
+                Number of Vertices: 25
+                <br>
+                <br><a href="https://pastebin.com/LsXHGyPQ">Input Link</a>
+            </p>
+        </div>
+
+        <div class="column">
+
+            <h2><b>Test Case - 5 : After Decomposition</b></h2>
+            <p>
+                <img src="TC/4-decompose.png" width=" 100%" height="600" alt="TestCase 5" class="center">
+            </p>
+            <p>
+                Merge Decompositions 10 and 15
+                <br>
+                <br>Elapsed Time in Decomposition: 0.013969s
+                <br>Elapsed Time in Merging: 0.033425s
+                <br>Total Elapsed Time: 0.047394s
+            </p>
+
+        </div>
+    </div>
+    <hr>
+    <h2 class="center2">
+        <b>Graph of Time required for Decomposition vs Number of vertices of the polygon</b>
+    </h2>
+    <p>
+        <img src="TC/decomposition.png" alt="Decomposition" width="100" height="600" class="center">
+    </p>
+    <hr>
+    <h2 class="center2">
+        <b>Graph of Time required for Merging vs Number of vertices of the polygon</b>
+    </h2>
+    <p>
+        <img src="TC/merging.png" width="100" height="600" alt="Merging" class="center">
+    </p>
+    <hr>
+    <h2 class="center2">
+        <b>Graph of Total Time required vs Number of vertices of the polygon</b>
+    </h2>
+    <p>
+        <img src="TC/total.png" width="100%" height="600" alt="Total" class="center">
+    </p>
+    <hr>
+    <div class="row">
+        <p>
+            Extra Test Cases:
+            <br>
+            <br><a href="https://pastebin.com/ZQrVFUMv">TestCases</a>
+        </p>
+    </div>
+</body>
+
+</html>

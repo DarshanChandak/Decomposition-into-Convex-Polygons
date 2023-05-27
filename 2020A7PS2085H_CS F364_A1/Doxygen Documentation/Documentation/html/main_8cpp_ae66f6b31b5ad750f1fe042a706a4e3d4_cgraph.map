@@ -1,0 +1,31 @@
+<map id="main" name="main">
+<area shape="rect" id="node1" title=" " alt="" coords="5,160,56,185"/>
+<area shape="rect" id="node2" href="$class_merging.html#a0b3683098e1b5d526ea4b94df8a81131" title="The partitioning algorithms discussed earlier generate effective partitions, but as with other partit..." alt="" coords="528,15,651,40"/>
+<area shape="rect" id="node7" href="$class_vertex_decomposition.html#ae304fbb1dbb7fbc1469a336da0c8910e" title=" " alt="" coords="104,227,259,267"/>
+<area shape="rect" id="node3" href="$class_auxiliary_class.html#a9871648fc6f4a5a7511f6be95f25ffd2" title="denotes angle between 0 and 360 swept by counterclockwise rotation from line segment ba to bc" alt="" coords="730,55,861,95"/>
+<area shape="rect" id="node6" href="$merging_8h.html#a5ca5e0dfa9ac095e397a07a534b86a15" title=" " alt="" coords="730,5,861,31"/>
+<area shape="rect" id="node4" href="$auxiliary__class_8h.html#a622317f769a90cb32e251ce2345882e7" title=" " alt="" coords="944,35,1061,60"/>
+<area shape="rect" id="node5" href="$class_vertex.html#ade6aab283db1c6a4c0886e04921cce98" title=" " alt="" coords="923,297,1083,323"/>
+<area shape="rect" id="node8" href="$class_algorithm1.html#a61f3c177d4792f9fb4f2bca1cced4a09" title=" " alt="" coords="307,420,459,445"/>
+<area shape="rect" id="node9" href="$class_dcel.html#a0e9ba6636fedd9b5f3074f8a61a21f01" title="add edge and partition" alt="" coords="507,395,672,420"/>
+<area shape="rect" id="node10" href="$class_dcel.html#a3090ecd1d557bbcdabf61ac248aa99fc" title="append element in the list" alt="" coords="746,623,845,648"/>
+<area shape="rect" id="node16" href="$class_dcel.html#a9a1acb48a938e641998708e56c6fc302" title="compare dcel with &#39;this&#39; class" alt="" coords="521,444,658,469"/>
+<area shape="rect" id="node17" href="$class_dcel.html#a13505e498139df0c6c93fc9d996ac3b9" title="Populating Dcel." alt="" coords="734,772,857,797"/>
+<area shape="rect" id="node19" href="$class_dcel.html#a771cfde96ae0d51202b26d6c853e5ab8" title="get element specified at position i" alt="" coords="758,673,833,699"/>
+<area shape="rect" id="node20" href="$class_dcel.html#a6a6ead8114a7c93393750ddd49c47b74" title="Get last element." alt="" coords="538,216,641,241"/>
+<area shape="rect" id="node21" href="$class_dcel.html#a66aac0aa1bc61e975b49cf3dc7e5d354" title="get size" alt="" coords="743,723,848,748"/>
+<area shape="rect" id="node22" href="$class_auxiliary_class.html#afd4b39893095c4f924cc6f843a476990" title="obtain rectangle covering the cyclical_list" alt="" coords="520,723,659,763"/>
+<area shape="rect" id="node23" href="$class_auxiliary_class.html#ae7548083b772fb943ba626cc0fddbb75" title="checks whether inside Cyclical List" alt="" coords="516,494,663,534"/>
+<area shape="rect" id="node25" href="$class_auxiliary_class.html#a644d5579f9b86d83d0855a896aa967ab" title="checks whether inside rectangle" alt="" coords="516,266,663,306"/>
+<area shape="rect" id="node26" href="$class_dcel.html#a2b2c4df68cfc3ec53ab8b9f48c86fc08" title="Get next element." alt="" coords="522,167,657,192"/>
+<area shape="rect" id="node27" href="$class_auxiliary_class.html#a650238ba84be71e7b570b7c6971315ea" title="obtain notches in cyclical_list" alt="" coords="515,558,663,598"/>
+<area shape="rect" id="node28" href="$class_auxiliary_class.html#ac2089c19eb2805e0d9e218b33ed70e86" title="obtain set of vertices of a cyclical list, on the right side of an edge as seen in the direction of t..." alt="" coords="511,330,668,370"/>
+<area shape="rect" id="node14" href="$class_dcel.html#a3ee0c9f548746099e533bfc0ea35a541" title="get vertices" alt="" coords="731,448,860,473"/>
+<area shape="rect" id="node15" href="$class_dcel.html#acf3bbca734c0a4d24429fd008a910f52" title="removes the vertex, from the list, rest stays connected" alt="" coords="726,399,865,424"/>
+<area shape="rect" id="node11" href="$class_vertex.html#af0c421646f594265ae30c3c60883f156" title="set incident edge" alt="" coords="919,648,1087,673"/>
+<area shape="rect" id="node12" href="$class_edge.html#af995e3e0a0b28aafe2c59a1dd403bc3d" title="set left face" alt="" coords="937,711,1068,736"/>
+<area shape="rect" id="node13" href="$class_edge.html#abfc19ebef269392c04c7fe39b194c9f8" title="set next edge" alt="" coords="933,599,1073,624"/>
+<area shape="rect" id="node18" href="$class_face.html#a6b70b5842c77e58808550d73bddcc338" title="set edge" alt="" coords="947,772,1059,797"/>
+<area shape="rect" id="node24" href="$auxiliary__class_8h.html#aa4b2db8eeab113dbc04df165b0024593" title=" " alt="" coords="720,501,871,527"/>
+<area shape="rect" id="node29" href="$auxiliary__class_8h.html#a82b5d6bcfe56b24756e05becebd2b9b3" title=" " alt="" coords="720,247,871,272"/>
+</map>

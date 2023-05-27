@@ -1,0 +1,7 @@
+<map id="Dcel::create_dcel" name="Dcel::create_dcel">
+<area shape="rect" id="node1" title="Populating Dcel." alt="" coords="5,80,128,105"/>
+<area shape="rect" id="node2" href="$class_face.html#a6b70b5842c77e58808550d73bddcc338" title="set edge" alt="" coords="204,5,316,31"/>
+<area shape="rect" id="node3" href="$class_vertex.html#af0c421646f594265ae30c3c60883f156" title="set incident edge" alt="" coords="176,55,344,80"/>
+<area shape="rect" id="node4" href="$class_edge.html#af995e3e0a0b28aafe2c59a1dd403bc3d" title="set left face" alt="" coords="195,104,325,129"/>
+<area shape="rect" id="node5" href="$class_edge.html#abfc19ebef269392c04c7fe39b194c9f8" title="set next edge" alt="" coords="190,153,330,179"/>
+</map>

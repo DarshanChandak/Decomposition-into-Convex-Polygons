@@ -1,0 +1,76 @@
+\hypertarget{class_vertex_decomposition}{}\doxysection{Vertex\+Decomposition Class Reference}
+\label{class_vertex_decomposition}\index{VertexDecomposition@{VertexDecomposition}}
+
+
+\mbox{\hyperlink{class_vertex}{Vertex}} Dependency Process.  
+
+
+
+
+{\ttfamily \#include $<$VDP.\+h$>$}
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static set$<$ vector$<$ \mbox{\hyperlink{class_dcel}{Dcel}} $\ast$ $>$ $>$ \mbox{\hyperlink{class_vertex_decomposition_ae304fbb1dbb7fbc1469a336da0c8910e}{vertex\+\_\+decomposition}} (vector$<$ pair$<$ double, double $>$ $>$ vecx)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_vertex}{Vertex}} Dependency Process. 
+
+Definition at line \mbox{\hyperlink{_v_d_p_8h_source_l00007}{7}} of file \mbox{\hyperlink{_v_d_p_8h_source}{VDP.\+h}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_vertex_decomposition_ae304fbb1dbb7fbc1469a336da0c8910e}\label{class_vertex_decomposition_ae304fbb1dbb7fbc1469a336da0c8910e}} 
+\index{VertexDecomposition@{VertexDecomposition}!vertex\_decomposition@{vertex\_decomposition}}
+\index{vertex\_decomposition@{vertex\_decomposition}!VertexDecomposition@{VertexDecomposition}}
+\doxysubsubsection{\texorpdfstring{vertex\_decomposition()}{vertex\_decomposition()}}
+{\footnotesize\ttfamily set$<$ vector$<$ \mbox{\hyperlink{class_dcel}{Dcel}} $\ast$ $>$ $>$ Vertex\+Decomposition\+::vertex\+\_\+decomposition (\begin{DoxyParamCaption}\item[{vector$<$ pair$<$ double, double $>$ $>$}]{vecx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+OS \texorpdfstring{$<$}{<}-\/ Phi ; CARD \texorpdfstring{$<$}{<}-\/ Infinite ; s \texorpdfstring{$<$}{<}-\/ 1
+
+While s \texorpdfstring{$<$}{<}= n do
+
+Decompose the polygon into convex polygons using v(s) as initial vertex
+
+If $\vert$D(s)$\vert$ = CARD then OS \texorpdfstring{$<$}{<}-\/ OS U D(s)
+
+else if $\vert$D(s)$\vert$ \texorpdfstring{$<$}{<} CARD then OS \texorpdfstring{$<$}{<}-\/ \{D(s)\}; CARD \texorpdfstring{$<$}{<}-\/ $\vert$D(s)$\vert$
+
+s \texorpdfstring{$<$}{<}-\/ s + 1;
+
+New\+First\+Polygon \texorpdfstring{$<$}{<}-\/ false
+
+While not New\+First\+Polygon and s \texorpdfstring{$<$}{<}= n do
+
+Generate P(s) ~\newline
+
+
+If P(s) != P(s-\/1) then New\+First\+Polygon \texorpdfstring{$<$}{<}-\/ true
+
+else s \texorpdfstring{$<$}{<}-\/ s + 1
+
+Definition at line \mbox{\hyperlink{_v_d_p_8h_source_l00012}{12}} of file \mbox{\hyperlink{_v_d_p_8h_source}{VDP.\+h}}.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_vertex_decomposition_ae304fbb1dbb7fbc1469a336da0c8910e_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{class_vertex_decomposition_ae304fbb1dbb7fbc1469a336da0c8910e_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Code/\mbox{\hyperlink{_v_d_p_8h}{VDP.\+h}}\end{DoxyCompactItemize}
